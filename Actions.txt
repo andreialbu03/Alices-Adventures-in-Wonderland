@@ -1,0 +1,12 @@
+move,mv,go
+get,grab,take,pick
+drop
+inventory,i,invent,inv
+location,loc,area,where
+look,examine
+exit,quit,q
+north,n
+south,s
+east,e
+west,w
+talk,t,speak
