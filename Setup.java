@@ -18,6 +18,12 @@ public class Setup {
                 String location = line.trim();
                 line = br.readLine();
 
+                String action = line.trim();
+                line = br.readLine();
+
+                String effect = line.trim();
+                line = br.readLine();
+
                 String description = "";
 
                 while (!line.equals("END")) { // while br has not hit "END"
@@ -26,7 +32,7 @@ public class Setup {
                 }
 
                 // put new items object and items name into HashMap
-                items.put(name, new Item(name, description, location));
+                items.put(name, new Item(name, description, location, action, effect));
                 line = br.readLine(); // move line to beginning of next
                                       // section of text
             }
@@ -59,6 +65,15 @@ public class Setup {
                 }
 
                 line = br.readLine();
+
+                String[] restrictions = line.split(" ");
+
+                for (int i = 0; i < restrictions.length; i++) {
+                    restrictions[i] = restrictions[i].trim();
+                }
+
+                line = br.readLine();
+
                 String description = "";
 
                 while (!line.equals("END")) { // while br has not hit "END"
@@ -66,7 +81,7 @@ public class Setup {
                     line = br.readLine();
                 }
 
-                rooms.put(name, new Room(name, description, neighbours, items, NPCs));
+                rooms.put(name, new Room(name, description, neighbours, items, NPCs, restrictions));
                 line = br.readLine();
             }
 

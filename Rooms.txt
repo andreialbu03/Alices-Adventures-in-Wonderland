@@ -1,7 +1,32 @@
 Open field
-Common room,-,Computer control room,-
+Rabbit hole,-,-,-
+none
 You are sitting on a tree branch in an open field, listening to you sister
 read a history book. You are very bored, when you suddenly notice a talking
 white rabbit with a pocket watch currying along the river bank. He quickly
 goes down a dark rabbit hole.
+END
+Rabbit hole
+Room with a table,-,-,-
+none
+You follow the White Rabbit through the rabbit hole. Inside, its very tight and
+dark. Suddenly, you fall down a hole you didn't see. While falling, you see many
+strange objects such as a grandfather clock, mirrors, and beds. You cleverly use
+your dress to parachute down and finally land in a room with checkered flooring.
+
+You see the white rabbit go through a door, possibly leading to a new room. You
+think you saw a table while the door was ajar, but you also hit your head while
+falling.
+END
+Room with a table
+-,-,Sea,-
+none
+You see a tiny door, through which you assume the rabbit went through. But you 
+cannot believe your eyes, you think you just saw the doorknob on the door move!
+You also see the table you previously saw and on it is an unknown potion.
+END
+Sea
+-,-,-,-
+small
+You are at in a Sea
 END

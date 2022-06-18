@@ -16,17 +16,12 @@ public class Game {
         this.actions = Setup.createActions();
     }
 
-
     public static void main(String[] args) {
-        // Player player = new Player("Open field");
-        // HashMap<String, Item> items = Setup.createItems();
-        // HashMap<String, NPC> NPCs = Setup.createNPCs();
-        // HashMap<String, Room> rooms = Setup.createRooms(items, NPCs);
-        // HashMap<String, Actions> actions = Setup.createActions();
-
         Game game = new Game();
-
         Scanner in = new Scanner(System.in);
+
+        String startingLoc = game.player.getLocation();
+        System.out.println(game.rooms.get(startingLoc).getDescription());
 
         while (true) {
             String userInput = in.nextLine();
@@ -121,6 +116,21 @@ public class Game {
                             game.player.talkTo(game.rooms, npc.trim().toLowerCase());
                         } else {
                             System.out.println("\nYou must specify a character to talk to. Try 'talk <character name>'.");
+                        }
+                        break;
+
+                    case "use":
+                        // User want to look at an item
+                        if (userCommand.length >= 2) {
+                            String item = "";
+
+                            for (int i = 1; i < userCommand.length; i++) {
+                                item += userCommand[i] + " ";
+                            }
+
+                            game.player.use(item.trim());
+                        } else {
+                            System.out.println("\nPlease specify an item to use. Try 'use <item name>'");
                         }
                         break;
                     

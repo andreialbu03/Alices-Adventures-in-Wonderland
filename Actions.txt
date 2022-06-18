@@ -10,3 +10,4 @@ south,s
 east,e
 west,w
 talk,t,speak
+use

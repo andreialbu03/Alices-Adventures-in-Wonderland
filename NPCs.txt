@@ -2,3 +2,19 @@ Dinah
 Open field
 Meow meow puurrrr
 END
+Sister
+Open field
+Alice, why aren't you paying attention to the book? You know that you will have to
+start reading book without pictures! And this is an important history lesson, so pay
+attention.
+END
+White rabbit
+Open field
+I'm late, I'm late, I'm late! I can't be late, must hurry, hurry, hurry!
+END
+Doorknob
+Room with a table
+Hello there! What are you doing here? Never mind that, why is everyone that passes by
+here in such a rush! First that white rabbit and now you! I'm assuming you want to go
+through my door but I won't allow that! Not at your gigantic size!
+END

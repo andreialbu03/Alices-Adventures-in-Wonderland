@@ -1,5 +1,12 @@
 Old floppy disk
 Open field
+none
 An old floppy disk, looks like it has been used for a long time. There writing on it 
 that reads "#11".
+END
+Unknown potion
+Room with a table
+shrink
+You have shrunk in size!
+An unknown potion labelled "DRINK ME" and which smells nice.
 END

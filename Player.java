@@ -4,15 +4,19 @@ public class Player {
 
     private static String location;
     private static Map<String, Item> inventory;
+    // sizes are large, normal, small
+    private static String size;
 
     public Player(String startingLocation) {
         inventory = new HashMap<String, Item>();
         // location = "Bright orange hallway";
         location = startingLocation;
+        size = "normal";
     }
 
     public void move(HashMap<String, Room> rooms, String direction) {
         Room currentRoom = rooms.get(location);
+        Room nextRoom;
 
         String[] neighbours = currentRoom.getNeighbours();
 
@@ -21,8 +25,16 @@ public class Player {
                 if (neighbours[0].equals("-")) {
                     System.out.println("\nYou cannot go that way.");
                 } else {
-                    location = neighbours[0];
-                    System.out.println("\nYou move north to the " + neighbours[0] + ".");
+                    nextRoom = rooms.get(neighbours[0]);
+
+                    if (isValidLocation(nextRoom)) {
+                        location = neighbours[0];
+                        System.out.println("\nYou move east to the " + neighbours[0] + ".");
+                        System.out.println("\n" + nextRoom.getDescription());
+                    } else {
+                        System.out.println("\nYou do not meet the requirements to go that way.");
+                    }
+                    
                 }
                 break;
 
@@ -30,17 +42,33 @@ public class Player {
                 if (neighbours[1].equals("-")) {
                     System.out.println("\nYou cannot go that way.");
                 } else {
-                    location = neighbours[1];
-                    System.out.println("\nYou move south to the " + neighbours[1] + ".");
+                    nextRoom = rooms.get(neighbours[1]);
+
+                    if (isValidLocation(nextRoom)) {
+                        location = neighbours[1];
+                        System.out.println("\nYou move east to the " + neighbours[1] + ".");
+                        System.out.println("\n" + nextRoom.getDescription());
+                    } else {
+                        System.out.println("\nYou do not meet the requirements to go that way.");
+                    }
+                    
                 }
                 break;
-            
+
             case "east":
                 if (neighbours[2].equals("-")) {
                     System.out.println("\nYou cannot go that way.");
                 } else {
-                    location = neighbours[2];
-                    System.out.println("\nYou move east to the " + neighbours[2] + ".");
+                    nextRoom = rooms.get(neighbours[2]);
+
+                    if (isValidLocation(nextRoom)) {
+                        location = neighbours[2];
+                        System.out.println("\nYou move east to the " + neighbours[2] + ".");
+                        System.out.println("\n" + nextRoom.getDescription());
+                    } else {
+                        System.out.println("\nYou do not meet the requirements to go that way.");
+                    }
+                    
                 }
                 break;
 
@@ -48,12 +76,20 @@ public class Player {
                 if (neighbours[3].equals("-")) {
                     System.out.println("\nYou cannot go that way.");
                 } else {
-                    location = neighbours[3];
-                    System.out.println("\nYou move west to the " + neighbours[3] + ".");
+                    nextRoom = rooms.get(neighbours[3]);
+
+                    if (isValidLocation(nextRoom)) {
+                        location = neighbours[3];
+                        System.out.println("\nYou move east to the " + neighbours[3] + ".");
+                        System.out.println("\n" + nextRoom.getDescription());
+                    } else {
+                        System.out.println("\nYou do not meet the requirements to go that way.");
+                    }
+                    
                 }
                 break;
         }
-
+        
     }
 
     // TODO
@@ -119,6 +155,75 @@ public class Player {
         } else {
             System.out.println("\n" + npc + " is not in this room.");
         }
+    }
+
+    public void use(String item) {
+        if (inventory.containsKey(item)) {
+            String action = inventory.get(item).getAction();
+            
+            switch (action) {
+                case "none":
+                    System.out.println("This item cannot be used.");
+                    break;
+
+                case "shrink":
+                    shrink();
+                    break;
+
+                case "grow":
+                    grow();
+                    break;
+            }
+
+            System.out.println("\n" + inventory.get(item).getEffect());
+        } else {
+            System.out.println("\nYou do not have the " + item + " in your inventory.");
+        }
+    }
+
+    public void shrink() {
+        switch (size) {
+            case "large":
+                size = "normal";
+                break;
+
+            case "normal":
+                size = "small";
+                break;
+
+            case "small":
+                break;
+        }
+    }
+
+    public void grow() {
+        switch (size) {
+            case "small":
+                size = "normal";
+                break;
+
+            case "normal":
+                size = "large";
+                break;
+
+            case "large":
+                break;
+        }
+    }
+
+    private boolean isValidLocation(Room nextRoom) {
+        String[] restrictions = nextRoom.getRestrictions();
+
+        if (restrictions[0].equals("none")) {
+            return true;
+        }
+
+        for (int i = 0; i < restrictions.length; i++) {
+            if (restrictions[i].equals(size)) {
+                return true;
+            }
+        }
+        return false;
     }
 
 }

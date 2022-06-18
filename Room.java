@@ -4,13 +4,15 @@ public class Room {
 	private String name;
 	private String[] neighbours;
 	private String description;
+	private String[] restrictions;
 	private HashMap<String, Item> items = new HashMap<String, Item>();
 	private HashMap<String, NPC> NPCs = new HashMap<String, NPC>();
 
-	public Room(String name, String description, String[] neighbours, HashMap<String, Item> items, HashMap<String, NPC> NPCs) {
+	public Room(String name, String description, String[] neighbours, HashMap<String, Item> items, HashMap<String, NPC> NPCs, String[] restrictions) {
 		this.name = name;
 		this.description = description;
 		this.neighbours = neighbours;
+		this.restrictions = restrictions;
 
 		populateItems(items);
 		populateNPCs(NPCs);
@@ -136,6 +138,10 @@ public class Room {
 
 	public HashMap<String, NPC> getNPCs() {
 		return NPCs;
+	}
+
+	public String[] getRestrictions() {
+		return restrictions;
 	}
 
 }
