@@ -1,5 +1,8 @@
 import java.util.*;
 
+// TODO change voicelines of character depending on situations?
+// doorknob still says alice is too big even after she shrinks
+
 public class Game {
 
     private Player player;
@@ -91,7 +94,7 @@ public class Game {
                         if (userCommand.length == 2) {
                             String direction = Control.checkInput(userCommand[1], game.actions);
                             userCommand[1] = direction;
-                            
+
                             if (userCommand[1] == null) {
                                 System.out.println("\nInvalid direction.");
                             } else {
@@ -134,6 +137,10 @@ public class Game {
                         }
                         break;
                     
+                    case "level":
+                        System.out.println("\nYou are level " + game.player.getLevel());
+                        break;
+
                     case "exit":
                         System.out.println("\nSorry to see you go. Goodbye!");
                         System.exit(0);

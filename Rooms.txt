@@ -26,7 +26,17 @@ cannot believe your eyes, you think you just saw the doorknob on the door move!
 You also see the table you previously saw and on it is an unknown potion.
 END
 Sea
--,-,-,-
+Safe room,-,-,-
 small
-You are at in a Sea
+You now are in a tiny row boat, floating in a large sea. You see in the distance
+many animals and birds that have been swept by the waters. After drifting for a while,
+you and the animals find a beach and dock. 
+
+You and the animals now start questioning yourselves how to dry off, as you do not
+want to catch a cold!
+END
+Safe room
+-,Sea,-,-
+none
+You have entered a safe roof. Use this room to use certain items in order to level up.
 END

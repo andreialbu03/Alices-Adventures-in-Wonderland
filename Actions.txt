@@ -11,3 +11,4 @@ east,e
 west,w
 talk,t,speak
 use
+level,lvl
