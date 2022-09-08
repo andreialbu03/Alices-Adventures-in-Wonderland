@@ -8,7 +8,7 @@ public class Game {
     private Player player;
     private HashMap<String, Item> items;
     private HashMap<String, NPC> NPCs;
-    private HashMap<String, Room> rooms;
+    private HashMap<String, Location> rooms;
     private HashMap<String, Actions> actions;
 
     public Game() {

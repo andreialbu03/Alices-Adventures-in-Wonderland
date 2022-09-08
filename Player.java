@@ -18,9 +18,9 @@ public class Player {
         visitedRooms.put(startingLocation, "You are back at the " + startingLocation);
     }
 
-    public void move(HashMap<String, Room> rooms, String direction) {
-        Room currentRoom = rooms.get(location);
-        Room nextRoom;
+    public void move(HashMap<String, Location> rooms, String direction) {
+        Location currentRoom = rooms.get(location);
+        Location nextRoom;
 
         String[] neighbours = currentRoom.getNeighbours();
 
@@ -125,8 +125,8 @@ public class Player {
     }
 
     // TODO
-    public void add(HashMap<String, Room> rooms, String item) {
-        Room currentRoom = rooms.get(location);
+    public void add(HashMap<String, Location> rooms, String item) {
+        Location currentRoom = rooms.get(location);
 
         if (currentRoom.getItems().containsKey(item)) {
             inventory.putItem(item, currentRoom.getItems().get(item));
@@ -139,8 +139,8 @@ public class Player {
     }
 
     // TODO
-    public void drop(HashMap<String, Room> rooms, String item) {
-        Room currentRoom = rooms.get(location);
+    public void drop(HashMap<String, Location> rooms, String item) {
+        Location currentRoom = rooms.get(location);
 
         if (inventory.contains(item)) {
             currentRoom.getItems().put(item, inventory.getItem(item));
@@ -175,12 +175,12 @@ public class Player {
         }
     }
 
-    public void look(HashMap<String, Room> rooms) {
+    public void look(HashMap<String, Location> rooms) {
         rooms.get(location).look();
     }
 
-    public void talkTo(HashMap<String, Room> rooms, String npc) {
-        Room currentRoom = rooms.get(location);
+    public void talkTo(HashMap<String, Location> rooms, String npc) {
+        Location currentRoom = rooms.get(location);
 
         if (currentRoom.getNPCs().containsKey(npc)) {
             currentRoom.getNPCs().get(npc).talk();
@@ -257,7 +257,7 @@ public class Player {
         }
     }
 
-    private boolean isValidLocation(Room nextRoom) {
+    private boolean isValidLocation(Location nextRoom) {
         String[] restrictions = nextRoom.getRestrictions();
 
         if (restrictions[0].equals("none")) {

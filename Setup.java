@@ -46,11 +46,11 @@ public class Setup {
         }
     }
 
-    public static HashMap<String, Room> createRooms(HashMap<String, Item> items, HashMap<String, NPC> NPCs) {
+    public static HashMap<String, Location> createRooms(HashMap<String, Item> items, HashMap<String, NPC> NPCs) {
         try (FileReader file = new FileReader("Rooms.txt");
                 BufferedReader br = new BufferedReader(file)) {
 
-            HashMap<String, Room> rooms = new HashMap<String, Room>();
+            HashMap<String, Location> rooms = new HashMap<String, Location>();
             String line = br.readLine();
 
             while (line != null) { // while more lines to read
@@ -81,7 +81,7 @@ public class Setup {
                     line = br.readLine();
                 }
 
-                rooms.put(name, new Room(name, description, neighbours, items, NPCs, restrictions));
+                rooms.put(name, new Location(name, description, neighbours, items, NPCs, restrictions));
                 line = br.readLine();
             }
 

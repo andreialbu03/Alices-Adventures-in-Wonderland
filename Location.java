@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Room {
+public class Location {
 	private String name;
 	private String[] neighbours;
 	private String description;
@@ -8,7 +8,7 @@ public class Room {
 	private HashMap<String, Item> items = new HashMap<String, Item>();
 	private HashMap<String, NPC> NPCs = new HashMap<String, NPC>();
 
-	public Room(String name, String description, String[] neighbours, HashMap<String, Item> items, HashMap<String, NPC> NPCs, String[] restrictions) {
+	public Location(String name, String description, String[] neighbours, HashMap<String, Item> items, HashMap<String, NPC> NPCs, String[] restrictions) {
 		this.name = name;
 		this.description = description;
 		this.neighbours = neighbours;
