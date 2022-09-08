@@ -6,9 +6,9 @@ public class Location {
 	private String description;
 	private String[] restrictions;
 	private HashMap<String, Item> items = new HashMap<String, Item>();
-	private HashMap<String, NPC> NPCs = new HashMap<String, NPC>();
+	private HashMap<String, Character> NPCs = new HashMap<String, Character>();
 
-	public Location(String name, String description, String[] neighbours, HashMap<String, Item> items, HashMap<String, NPC> NPCs, String[] restrictions) {
+	public Location(String name, String description, String[] neighbours, HashMap<String, Item> items, HashMap<String, Character> NPCs, String[] restrictions) {
 		this.name = name;
 		this.description = description;
 		this.neighbours = neighbours;
@@ -28,8 +28,8 @@ public class Location {
 		}
 	}
 
-	private void populateNPCs(HashMap<String, NPC> NPCs) {
-		for (Map.Entry<String, NPC> elt : NPCs.entrySet()) { // iterate through collection
+	private void populateNPCs(HashMap<String, Character> NPCs) {
+		for (Map.Entry<String, Character> elt : NPCs.entrySet()) { // iterate through collection
 			// if items location matches rooms name...
 			if (elt.getValue().getLocation().equals(name)) {
 				// ...put item in room
@@ -87,7 +87,7 @@ public class Location {
 			System.out.println("\nThere is no one to talk to in this room.");
 		} else {
 			System.out.print("\nYou can talk to ");
-			for (Map.Entry<String, NPC> elt : NPCs.entrySet()) { // iterate
+			for (Map.Entry<String, Character> elt : NPCs.entrySet()) { // iterate
 				System.out.print(elt.getKey() + ", ");
 			}
 			System.out.println();
@@ -136,7 +136,7 @@ public class Location {
 		return description;
 	}
 
-	public HashMap<String, NPC> getNPCs() {
+	public HashMap<String, Character> getNPCs() {
 		return NPCs;
 	}
 

@@ -1,12 +1,12 @@
 import java.util.*;
 
-public class NPC {
+public class Character {
 
     private String name;
     private String dialog;
     private String location;
 
-    public NPC(String name, String dialog, String location) {
+    public Character(String name, String dialog, String location) {
         this.name = name;
         this.dialog = dialog;
         this.location = location;
