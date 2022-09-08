@@ -3,15 +3,14 @@ import java.util.*;
 public class Player {
 
     private static String location;
-    private static Map<String, Item> inventory;
+    private static Inventory inventory;
     // sizes are large, normal, small
     private static String size;
     private static int level;
     private static HashMap<String, String> visitedRooms;
 
     public Player(String startingLocation) {
-        inventory = new HashMap<String, Item>();
-        // location = "Bright orange hallway";
+        inventory = new Inventory();
         location = startingLocation;
         size = "normal";
         level = 0;
@@ -130,7 +129,7 @@ public class Player {
         Room currentRoom = rooms.get(location);
 
         if (currentRoom.getItems().containsKey(item)) {
-            inventory.put(item, currentRoom.getItems().get(item));
+            inventory.putItem(item, currentRoom.getItems().get(item));
             currentRoom.getItems().remove(item);
 
             System.out.println("\nYou picked up the " + item + " and places it in your inventory.");
@@ -143,8 +142,8 @@ public class Player {
     public void drop(HashMap<String, Room> rooms, String item) {
         Room currentRoom = rooms.get(location);
 
-        if (inventory.containsKey(item)) {
-            currentRoom.getItems().put(item, inventory.get(item));
+        if (inventory.contains(item)) {
+            currentRoom.getItems().put(item, inventory.getItem(item));
             inventory.remove(item);
 
             System.out.println("\nYou dropped the " + item + " and placed it in the room.");
@@ -158,19 +157,19 @@ public class Player {
     }
 
     public void getInventory() {
-        if (inventory.size() == 0) {
+        if (inventory.getSize() == 0) {
             System.out.println("\nYou have no items in your inventory.");
         } else {
             System.out.println("\nYou have the following items in your inventory:");
-            for (String item : inventory.keySet()) {
+            for (String item : inventory.getItemsSet()) {
                 System.out.println("- " + item);
             }
         }
     }
 
     public void look(String item) {
-        if (inventory.containsKey(item)) {
-            System.out.println("\n" + inventory.get(item).getDescription());
+        if (inventory.contains(item)) {
+            System.out.println("\n" + inventory.getItem(item).getDescription());
         } else {
             System.out.println("\nYou do not have the " + item + " in your inventory.");
         }
@@ -191,8 +190,8 @@ public class Player {
     }
 
     public void use(String item) {
-        if (inventory.containsKey(item)) {
-            String action = inventory.get(item).getAction();
+        if (inventory.contains(item)) {
+            String action = inventory.getItem(item).getAction();
             
             switch (action) {
                 case "none":
@@ -201,13 +200,13 @@ public class Player {
 
                 case "shrink":
                     shrink();
-                    System.out.println("\n" + inventory.get(item).getEffect());
+                    System.out.println("\n" + inventory.getItem(item).getEffect());
                     inventory.remove(item);
                     break;
 
                 case "grow":
                     grow();
-                    System.out.println("\n" + inventory.get(item).getEffect());
+                    System.out.println("\n" + inventory.getItem(item).getEffect());
                     inventory.remove(item);
                     break;
 
@@ -216,7 +215,7 @@ public class Player {
                         System.out.println("\nYou cannot use this item here.");
                     } else {
                         levelUp();
-                        System.out.println("\n" + inventory.get(item).getEffect());
+                        System.out.println("\n" + inventory.getItem(item).getEffect());
                         System.out.println("You are now level " + level + "!");
                         inventory.remove(item);
                     }
