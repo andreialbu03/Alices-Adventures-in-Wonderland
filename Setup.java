@@ -108,8 +108,7 @@ public class Setup {
                 // put new items object and items name into HashMap
                 actions.put(mainAction, new Actions(actionsList));
 
-                line = br.readLine(); // move line to beginning of next
-                                      // section of text
+                line = br.readLine(); 
             }
 
             return actions;

@@ -21,6 +21,8 @@ public class Game {
 
     public static void main(String[] args) {
         Game game = new Game();
+
+        //TODO close scanner
         Scanner in = new Scanner(System.in);
 
         String startingLoc = game.player.getLocation();

@@ -1,12 +1,84 @@
-Unknown potion
+Sister's History Book
+Open field
+level up
+You have read the book and gained new knowledge. You have leveled up!
+A history book that belonged to your sister. It's a bit worn, but you can still read it.
+END
+White Rabbit's Pocket Watch
+Rabbit hole
+none
+none
+A pocket watch that belonged to the White Rabbit.
+END
+Green Potion
+Room with a table
+grow
+You have grown in size!
+An unknown potion labelled "DRINK ME", which smells like a field of flowers.
+END
+Red Potion
 Room with a table
 shrink
 You have shrunk in size!
-An unknown potion labelled "DRINK ME" and which smells nice.
+A tiny vial of a liquid that smells like mint.
+END
+Blue Potion
+Room with a table
+shrink
+You have shrunk in size!
+A very heavy vial with a viscous liquid that glistens in the light.
 END
 Seashell
 Sea
 level up
 You have used a special item to level up!
 A mysterious seashell. When held against your ear, you hear the sounds of the sea.
+END
+Cat Fur
+Forest
+none
+none
+Cat fur that you found in the forest. Must be from the Cheshire Cat.
+END
+Red Mushroom
+Forest
+level up
+You have eaten the mushroom and have leveled up!
+A red mushroom that you found in the forest. It looks very beautiful and tasty.
+END
+Mad Hatter's Hat
+Tea Party
+level up
+You have put on the Mad Hatter's Hat and look very stylish. You have leveled up!
+The Mad Hatter's hat, which looks very fancy.
+END
+March Hare's Bow Tie
+Tea Party
+level up
+You have put on the March Hare's Bow Tie and look very nicely dressed. You have leveled up!
+The March Hare's bow tie, which looks to be made from expensive silk.
+END
+Teacup
+Tea Party
+level up
+You drink from the tea cup and feel yourself becoming energized. You have leveled up!
+A china teacup that you found at the tea party. Still has some tea in it.
+END
+Mad Hatter's Bandolier
+Tea Party
+level up
+You have put on the Mad Hatter's Bandolier and love they many different colours it has. You have leveled up!
+The Mad Hatter's bandolier, which looks to be made from many different coloured ribbons.
+END
+Queen's staff
+Queen's Palace
+none
+none
+The Queen's staff, which is made from a pure gold and studded with a big red ruby.
+END
+Queen's Pearl Necklace
+Queen's Palace
+none
+none
+An old, yet beautiful pearl necklace that belonged to the Queen of Hearts.
 END

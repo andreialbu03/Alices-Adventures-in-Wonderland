@@ -41,11 +41,11 @@ public class Player {
                             visitedRooms.put("\n" + location, "You are back at the " + location);
                             System.out.println("\n" + nextRoom.getDescription());
                         }
-                        
+
                     } else {
-                        System.out.println("\nYou do not meet the requirements to go that way.");
+                        System.out.println("\nYou do not meet the level or size requirements to go that way.");
                     }
-                    
+
                 }
                 break;
 
@@ -65,11 +65,11 @@ public class Player {
                             visitedRooms.put("\n" + location, "You are back at the " + location);
                             System.out.println("\n" + nextRoom.getDescription());
                         }
-                        
+
                     } else {
-                        System.out.println("\nYou do not meet the requirements to go that way.");
+                        System.out.println("\nYou do not meet the level or size requirements to go that way.");
                     }
-                    
+
                 }
                 break;
 
@@ -89,11 +89,11 @@ public class Player {
                             visitedRooms.put("\n" + location, "You are back at the " + location);
                             System.out.println("\n" + nextRoom.getDescription());
                         }
-                        
+
                     } else {
-                        System.out.println("\nYou do not meet the requirements to go that way.");
+                        System.out.println("\nYou do not meet the level or size requirements to go that way.");
                     }
-                    
+
                 }
                 break;
 
@@ -113,15 +113,15 @@ public class Player {
                             visitedRooms.put("\n" + location, "You are back at the " + location);
                             System.out.println("\n" + nextRoom.getDescription());
                         }
-                        
+
                     } else {
-                        System.out.println("\nYou do not meet the requirements to go that way.");
+                        System.out.println("\nYou do not meet the level or size requirements to go that way.");
                     }
-                    
+
                 }
                 break;
         }
-        
+
     }
 
     // TODO
@@ -192,7 +192,7 @@ public class Player {
     public void use(String item) {
         if (inventory.contains(item)) {
             String action = inventory.getItem(item).getAction();
-            
+
             switch (action) {
                 case "none":
                     System.out.println("\nThis item cannot be used.");
@@ -264,12 +264,36 @@ public class Player {
             return true;
         }
 
-        for (int i = 0; i < restrictions.length; i++) {
-            if (restrictions[i].equals(size)) {
-                return true;
+        String[] sizeRestriction = { "small", "normal", "large" };
+
+        for (String element : sizeRestriction) {
+            if (element.equals(restrictions[0])) {
+                if (restrictions[0].equals(size)) {
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                int levelRequirement = Integer.parseInt(restrictions[0].substring(3));
+
+                if (restrictions[0].substring(0, 3).equals("lvl")) {
+                    if (level >= levelRequirement) {
+                        return true;
+                    }
+                }
             }
         }
         return false;
+
+        // for (int i = 0; i < restrictions.length; i++) {
+        // if (restrictions[i].equals(size)) {
+        // return true;
+        // }
+        // if (restrictions[i].equals(size)) {
+        // return true;
+        // }
+        // }
+        // return false;
     }
 
     public int getLevel() {

@@ -18,3 +18,32 @@ Hello there! What are you doing here? Never mind that, why is everyone that pass
 here in such a rush! First that white rabbit and now you! I'm assuming you want to go
 through my door but I won't allow that! Not at your gigantic size!
 END
+Cheshire Cat
+Forest
+Imagination is the only weapon in the war with reality! We’re all mad here. I’m mad.
+You’re mad. You might think I am crazy but I am not crazy; my reality is just different
+from yours.
+
+If you haven't seen them yet, the Mad Hatter and the March Hare are having a tea party!
+Visit either you like: they’re both mad.
+END
+Mad Hatter
+Tea Party
+Hello there! what a small world it is! I'm the Mad Hatter, and this is my birthday tea
+party. I'm so glad you could join us! I'm sure you'll have a wonderful time!
+
+Actually when I think about it, this is an unbirthday party!
+END
+March Hare
+Tea Party
+Hello dear! Have some wine! You say you don't see any wine? That's because there is no
+wine at the table! You see, we're having an unbirthday party! It's a very special day
+for us, because it's the day we celebrate our unbirthday!
+END
+Queen of Hearts
+Queen's Palace
+How dare you come to my royal palace! I am the Queen of Hearts, and I will not
+tolerate any nonsense! I will have your head for this!
+
+Noooo! You can't cut off my head! I'm not a head! I'm the Queen of Hearts!
+END

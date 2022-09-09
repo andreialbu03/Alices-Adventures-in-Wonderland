@@ -23,10 +23,10 @@ Room with a table
 none
 You see a tiny door, through which you assume the rabbit went through. But you 
 cannot believe your eyes, you think you just saw the doorknob on the door move!
-You also see the table you previously saw and on it is an unknown potion.
+You also see the table you previously saw and on it are several unknown potions.
 END
 Sea
-Safe room,-,-,-
+Safe room,Tea Party,-,Forest
 small
 You now are in a tiny row boat, floating in a large sea. You see in the distance
 many animals and birds that have been swept by the waters. After drifting for a while,
@@ -39,4 +39,19 @@ Safe room
 -,Sea,-,-
 none
 You have entered a safe roof. Use this room to use certain items in order to level up.
+END
+Forest
+-,Tea Party,Sea,-
+none
+You are in the forest.
+END
+Tea Party
+Sea,Queen's Palace,-,-
+none
+You are at a tea party. You see the Mad Hatter, the March Hare.
+END
+Queen's Palace
+Tea Party,-,-,-
+lvl1
+You are in the Queen's Palace. You see the Queen of Hearts.
 END
