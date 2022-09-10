@@ -11,9 +11,16 @@ public class Setup {
             String line = br.readLine();
 
             while (line != null) { // while more lines to read
+
+                boolean isQueenItem = false;
+
                 String name = line;
                 name = name.toLowerCase();
                 line = br.readLine();
+
+                if (name.substring(0, 5).equals("queen")) {
+                    isQueenItem = true;
+                }
 
                 String location = line.trim();
                 line = br.readLine();
@@ -31,10 +38,15 @@ public class Setup {
                     line = br.readLine();
                 }
 
+                // if (!isQueenItem) {
+                //     // put new items object and items name into HashMap
+                //     items.put(name, new Item(name, description, location, action, effect));
+                // }
+
                 // put new items object and items name into HashMap
                 items.put(name, new Item(name, description, location, action, effect));
+                
                 line = br.readLine(); // move line to beginning of next
-                                      // section of text
             }
 
             return items;

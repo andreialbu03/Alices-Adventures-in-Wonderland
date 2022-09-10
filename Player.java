@@ -179,11 +179,16 @@ public class Player {
         rooms.get(location).look();
     }
 
-    public void talkTo(HashMap<String, Location> rooms, String npc) {
+    public void talkTo(HashMap<String, Location> rooms, String npc, HashMap<String, Item> queenItems) {
         Location currentRoom = rooms.get(location);
 
         if (currentRoom.getNPCs().containsKey(npc)) {
             currentRoom.getNPCs().get(npc).talk();
+
+            if (npc.equals("queen of hearts")) {
+                addQueenItemsToRoom(rooms, queenItems);
+            }
+
         } else {
             System.out.println("\n" + npc + " is not in this room.");
         }
@@ -285,15 +290,6 @@ public class Player {
         }
         return false;
 
-        // for (int i = 0; i < restrictions.length; i++) {
-        // if (restrictions[i].equals(size)) {
-        // return true;
-        // }
-        // if (restrictions[i].equals(size)) {
-        // return true;
-        // }
-        // }
-        // return false;
     }
 
     public int getLevel() {
@@ -302,6 +298,11 @@ public class Player {
 
     private void levelUp() {
         level++;
+    }
+
+    private void addQueenItemsToRoom(HashMap<String, Location> rooms, HashMap<String, Item> items) {
+        Location currentRoom = rooms.get(location);
+        currentRoom.addItem(items);
     }
 
 }

@@ -144,4 +144,10 @@ public class Location {
 		return restrictions;
 	}
 
+	public void addItem(HashMap<String, Item> items) {
+		for (Map.Entry<String, Item> name : items.entrySet()) {
+			this.items.put(name.getKey(), name.getValue());
+		}
+	}
+
 }

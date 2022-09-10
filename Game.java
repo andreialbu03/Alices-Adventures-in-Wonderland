@@ -10,19 +10,34 @@ public class Game {
     private HashMap<String, Character> NPCs;
     private HashMap<String, Location> rooms;
     private HashMap<String, Actions> actions;
+    private HashMap<String, Item> queenItems;
 
     public Game() {
-        this.player = new Player("Open field");
+        this.player = new Player("Queen's Palace");
         this.items = Setup.createItems();
         this.NPCs = Setup.createNPCs();
-        this.rooms = Setup.createRooms(items, NPCs);
         this.actions = Setup.createActions();
+        this.queenItems = new HashMap<String, Item>();
+
+        HashMap<String, Item> dummy = new HashMap<String, Item>();
+        dummy.putAll(items);
+
+        for (Map.Entry<String, Item> entry : dummy.entrySet()) {
+            String name = entry.getKey();
+            Item item = entry.getValue();
+
+            if (name.substring(0, 5).equals("queen")) {
+                this.queenItems.put(name, item);
+                this.items.remove(name);
+            }
+        }
+        this.rooms = Setup.createRooms(items, NPCs);
     }
 
     public static void main(String[] args) {
         Game game = new Game();
 
-        //TODO close scanner
+        // TODO close scanner
         Scanner in = new Scanner(System.in);
 
         String startingLoc = game.player.getLocation();
@@ -103,7 +118,8 @@ public class Game {
                                 game.player.move(game.rooms, userCommand[1]);
                             }
                         } else if (userCommand.length > 2) {
-                            System.out.println("\n You can only move in one direction at a time. Try 'move <direction>'.");
+                            System.out.println(
+                                    "\n You can only move in one direction at a time. Try 'move <direction>'.");
                         } else {
                             System.out.println("\nYou must specify a direction to move. Try 'move <direction>'.");
                         }
@@ -118,9 +134,10 @@ public class Game {
                                 npc += userCommand[i] + " ";
                             }
 
-                            game.player.talkTo(game.rooms, npc.trim().toLowerCase());
+                            game.player.talkTo(game.rooms, npc.trim().toLowerCase(), game.queenItems);
                         } else {
-                            System.out.println("\nYou must specify a character to talk to. Try 'talk <character name>'.");
+                            System.out
+                                    .println("\nYou must specify a character to talk to. Try 'talk <character name>'.");
                         }
                         break;
 
@@ -138,7 +155,7 @@ public class Game {
                             System.out.println("\nPlease specify an item to use. Try 'use <item name>'");
                         }
                         break;
-                    
+
                     case "level":
                         System.out.println("\nYou are level " + game.player.getLevel());
                         break;
