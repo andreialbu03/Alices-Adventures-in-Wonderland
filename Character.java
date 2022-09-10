@@ -36,11 +36,6 @@ public class Character {
         return name;
     }
 
-    /** Public getter method that returns the NPC's dialog */
-    public String getDialog() {
-        return dialog;
-    }
-
     /** Public getter method that returns the NPC's location */
     public String getLocation() {
         return location;
