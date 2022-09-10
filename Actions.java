@@ -19,7 +19,7 @@ public class Actions {
         this.actions = actions;
     }
 
-    // Getter method to return the valid actions
+    /** Public getter method to return the valid actions */
     public String[] getActions() {
         return actions;
     }

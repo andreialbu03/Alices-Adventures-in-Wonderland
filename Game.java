@@ -1,4 +1,3 @@
-
 /**
  * title: Game.java
  * description: The highest level class responsible for running the game
@@ -165,7 +164,7 @@ public class Game {
                     case "move":
                         // Check if the user specified a direction
                         if (userCommand.length == 2) {
-                            // Parse  direction from user input and check if it's valid using Control class
+                            // Parse direction from user input and check if it's valid using Control class
                             String direction = Control.checkInput(userCommand[1], game.actions);
                             userCommand[1] = direction;
 
