@@ -150,4 +150,8 @@ public class Location {
 		}
 	}
 
+	public void removeCharacter(String name) {
+		this.NPCs.remove(name);
+	}
+
 }

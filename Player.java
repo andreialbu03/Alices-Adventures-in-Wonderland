@@ -301,8 +301,11 @@ public class Player {
     }
 
     private void addQueenItemsToRoom(HashMap<String, Location> rooms, HashMap<String, Item> items) {
+        
+        // BUG once I takl to queen again, items spawn again, make it so you talk to queen only once
         Location currentRoom = rooms.get(location);
         currentRoom.addItem(items);
+        currentRoom.removeCharacter("queen of hearts");
     }
 
 }
