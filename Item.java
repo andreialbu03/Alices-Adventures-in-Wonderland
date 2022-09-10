@@ -9,7 +9,7 @@
 
 /** Primary (public) class Item */
 public class Item {
-    
+
     /** Instance variables to store the item's attributes */
     private String name;
     private String description;
@@ -24,18 +24,6 @@ public class Item {
         this.location = location;
         this.action = action;
         this.effect = effect;
-    }
-
-    // TODO remove this method
-    /** Public method that displays the item's description */
-    public void inspect() {
-        System.out.println(description);
-    }
-
-    // TODO remove this method
-    /** Public getter method that returns the item's name */
-    public String getName() {
-        return name;
     }
 
     /** Public getter method that returns the item's description */

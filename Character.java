@@ -28,12 +28,6 @@ public class Character {
         System.out.print("\n" + dialog);
     }
 
-    // TODO remove this method
-    /** Public getter method that returns the NPC's name */
-    public String getName() {
-        return name;
-    }
-
     /** Public getter method that returns the NPC's location */
     public String getLocation() {
         return location;
