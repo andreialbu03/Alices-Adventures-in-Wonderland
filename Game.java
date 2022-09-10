@@ -13,6 +13,9 @@ public class Game {
     private HashMap<String, Item> queenItems;
 
     public Game() {
+        String instructions = Setup.gameInstructions();
+        System.out.println(instructions);
+
         this.player = new Player("Queen's Palace");
         this.items = Setup.createItems();
         this.NPCs = Setup.createNPCs();
@@ -37,13 +40,20 @@ public class Game {
     public static void main(String[] args) {
         Game game = new Game();
 
-        // TODO close scanner
         Scanner in = new Scanner(System.in);
 
         String startingLoc = game.player.getLocation();
         System.out.println(game.rooms.get(startingLoc).getDescription());
 
         while (true) {
+
+            // Check if player was won (inventory contains queen's staff and necklace)
+            if (game.player.hasWon()) {
+                String win = Setup.win();
+                System.out.println("\n" + win);
+                break;
+            }
+
             String userInput = in.nextLine();
             userInput = userInput.toLowerCase();
             String[] userCommand = userInput.split(" ");
@@ -164,9 +174,16 @@ public class Game {
                         System.out.println("\nSorry to see you go. Goodbye!");
                         System.exit(0);
                         break;
+                    
+                    case "help":
+                        String help = Setup.help();
+                        System.out.println("\n" + help);
+                        break;
                 }
 
             }
         }
+
+        in.close();
     }
 }

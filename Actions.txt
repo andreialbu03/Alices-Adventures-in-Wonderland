@@ -12,3 +12,4 @@ west,w
 talk,t,speak
 use
 level,lvl
+help

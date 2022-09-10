@@ -1,0 +1,19 @@
+Welcome to Alice's Adventures in Wonderland! This is a roleplaying
+game based on the book by Lewis Carroll.  
+
+The game is set in Wonderland, a strange and magical place where
+anything can happen. You will be able to explore the world of 
+Wonderland and meet many strange and wonderful characters. You will
+also be able to interact with various items and objects in the game.
+
+You will be playing Alice, a small and curious child in the Victorian
+era. You goal is to find your way through Wonderland to the Queen of
+Hearts' palace. There, you will have to talk to her and take her staff
+and necklace. Once you have done this, you will beat the game!
+
+To play the game, type in a command and press enter.
+You can type in commands in lower or upper case, it doesn't matter.
+Many commands have synonyms, so you can type in a command in a
+variety of ways. For example, you can type in "go north" or "go n".
+
+You can type in "help" to get a list of all the commands.

@@ -165,4 +165,67 @@ public class Setup {
             return null;
         }
     }
+
+    public static String gameInstructions() {
+        try (FileReader file = new FileReader("Instructions.txt");
+                BufferedReader br = new BufferedReader(file)) {
+
+            String line = br.readLine();
+            String instructions = "";
+
+            while (line != null) { // while more lines to read
+                instructions = instructions + line + '\n';
+                line = br.readLine();
+            }
+
+            return instructions;
+
+        } catch (IOException e) {
+            // If the file is not found, display a message
+            System.out.println("Error reading file. Please check the filename and try again.");
+            return null;
+        }
+    }
+
+    public static String help() {
+        try (FileReader file = new FileReader("Actions.txt");
+                BufferedReader br = new BufferedReader(file)) {
+
+            String line = br.readLine();
+            String help = "The following are the commands that are available to you:\n\n";
+
+            while (line != null) { // while more lines to read
+                help = help + line + '\n';
+                line = br.readLine();
+            }
+            help = help + "\nAll commands on the same line act as synonyms and all are are case insensitive.\n";
+            return help;
+
+        } catch (IOException e) {
+            // If the file is not found, display a message
+            System.out.println("Error reading file. Please check the filename and try again.");
+            return null;
+        }
+    }
+
+    public static String win () {
+        try (FileReader file = new FileReader("Win.txt");
+                BufferedReader br = new BufferedReader(file)) {
+
+            String line = br.readLine();
+            String win = "";
+
+            while (line != null) { // while more lines to read
+                win = win + line + '\n';
+                line = br.readLine();
+            }
+
+            return win;
+
+        } catch (IOException e) {
+            // If the file is not found, display a message
+            System.out.println("Error reading file. Please check the filename and try again.");
+            return null;
+        }
+    }
 }
