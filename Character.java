@@ -7,9 +7,6 @@
  * @copyright 2022 Andrei Albu
  */
 
-// Import Java packages
-import java.util.*;
-
 /** Primary (public) class Character */
 public class Character {
 
