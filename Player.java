@@ -204,15 +204,23 @@ public class Player {
                     break;
 
                 case "shrink":
-                    shrink();
-                    System.out.println("\n" + inventory.getItem(item).getEffect());
-                    inventory.remove(item);
+                    boolean hasShrunk = shrink();
+                    if (hasShrunk) {
+                        System.out.println("\n" + inventory.getItem(item).getEffect());
+                        inventory.remove(item);
+                    } else {
+                        System.out.println("\nYou are already the smallest size.");
+                    }
                     break;
 
                 case "grow":
-                    grow();
-                    System.out.println("\n" + inventory.getItem(item).getEffect());
-                    inventory.remove(item);
+                    boolean hasGrown = grow();
+                    if (hasGrown) {
+                        System.out.println("\n" + inventory.getItem(item).getEffect());
+                        inventory.remove(item);
+                    } else {
+                        System.out.println("\nYou are already the largest size.");
+                    }
                     break;
 
                 case "level up":
@@ -232,34 +240,36 @@ public class Player {
         }
     }
 
-    public void shrink() {
+    public boolean shrink() {
         switch (size) {
             case "large":
                 size = "normal";
-                break;
+                return true;
 
             case "normal":
                 size = "small";
-                break;
+                return true;
 
             case "small":
                 break;
         }
+        return false;
     }
 
-    public void grow() {
+    public boolean grow() {
         switch (size) {
             case "small":
                 size = "normal";
-                break;
+                return true;
 
             case "normal":
                 size = "large";
-                break;
+                return true;
 
             case "large":
                 break;
         }
+        return false;
     }
 
     private boolean isValidLocation(Location nextRoom) {
