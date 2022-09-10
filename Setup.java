@@ -44,7 +44,7 @@ public class Setup {
                 // }
 
                 // put new items object and items name into HashMap
-                items.put(name, new Item(name, description, location, action, effect));
+                items.put(name, new Item(description, location, action, effect));
                 
                 line = br.readLine(); // move line to beginning of next
             }
@@ -153,7 +153,7 @@ public class Setup {
                     line = br.readLine();
                 }
 
-                NPCs.put(name, new Character(name, dialog, location));
+                NPCs.put(name, new Character(dialog, location));
                 line = br.readLine();
             }
 

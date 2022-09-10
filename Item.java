@@ -11,15 +11,13 @@
 public class Item {
 
     /** Instance variables to store the item's attributes */
-    private String name;
     private String description;
     private String location;
     private String action;
     private String effect;
 
     /** Constructor for the Item class, accepts 5 parameters */
-    public Item(String name, String description, String location, String action, String effect) {
-        this.name = name;
+    public Item(String description, String location, String action, String effect) {
         this.description = description;
         this.location = location;
         this.action = action;

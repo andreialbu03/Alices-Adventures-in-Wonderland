@@ -11,14 +11,12 @@
 public class Character {
 
     /** Instance variables storing attributes of an NPC */
-    private String name;
     private String dialog;
     private String location;
 
     /** Constructor for the Character class, accepts 3 parameters */
-    public Character(String name, String dialog, String location) {
+    public Character(String dialog, String location) {
         // Initializes instance variables
-        this.name = name;
         this.dialog = dialog;
         this.location = location;
     }
