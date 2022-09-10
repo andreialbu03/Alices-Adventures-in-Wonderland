@@ -132,7 +132,7 @@ public class Player {
             inventory.putItem(item, currentRoom.getItems().get(item));
             currentRoom.getItems().remove(item);
 
-            System.out.println("\nYou picked up the " + item + " and places it in your inventory.");
+            System.out.println("\nYou picked up the " + item + " and place it in your inventory.");
         } else {
             System.out.println("\nThere is no " + item + " in this room.");
         }
@@ -312,6 +312,10 @@ public class Player {
             return true;
         }
         return false;
+    }
+
+    public String getSize() {
+        return size;
     }
 
 }

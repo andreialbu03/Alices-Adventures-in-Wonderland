@@ -29,7 +29,7 @@ public class Game {
         System.out.println(instructions);
 
         // Using the Setup class, initialize the game instance variables
-        this.player = new Player("Queen's Palace");
+        this.player = new Player("Open field");
         this.items = Setup.createItems();
         this.NPCs = Setup.createNPCs();
         this.actions = Setup.createActions();
@@ -240,6 +240,13 @@ public class Game {
                         // Call the Setup help method to display the help menu
                         String help = Setup.help();
                         System.out.println("\n" + help);
+                        break;
+
+                    // If the user wants to see their size
+                    case "size":
+                        // Call the Player getSize method to display the player's current size
+                        String size = game.player.getSize();
+                        System.out.println("\nYou are " + size + ".");
                         break;
                 }
 
