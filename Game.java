@@ -91,7 +91,6 @@ public class Game {
 
                 // Based on the first command, execute the appropriate action
                 switch (userCommand[0]) {
-
                     // If the user wants their current location
                     case "location":
                         System.out.println("\nYou are at the " + game.player.getLocation());
