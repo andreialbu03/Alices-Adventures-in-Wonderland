@@ -1,2 +1,8 @@
-# Compiled class file
+# Java
 *.class
+
+# Visual Studio Code
+.vscode/*
+
+# macOS
+.DS_Store
