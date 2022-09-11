@@ -47,11 +47,11 @@ You are in the forest.
 END
 Tea Party
 Sea,Queen's Palace,-,-
-none
+lvl3
 You are at a tea party. You see the Mad Hatter, the March Hare.
 END
 Queen's Palace
 Tea Party,-,-,-
-lvl1
+lvl7
 You are in the Queen's Palace. You see the Queen of Hearts.
 END
