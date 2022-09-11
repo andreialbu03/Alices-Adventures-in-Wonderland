@@ -64,7 +64,7 @@ public class Player {
                         } else {
                             // If the room does not exist in the visitedRooms HashMap, add it and display a
                             // custom description
-                            visitedRooms.put("\n" + location, "You are back at the " + location);
+                            visitedRooms.put(location, "You are back at the " + location);
                             System.out.println("\n" + nextRoom.getDescription());
                         }
 
@@ -96,7 +96,7 @@ public class Player {
                         } else {
                             // If the room does not exist in the visitedRooms HashMap, add it and display a
                             // custom description
-                            visitedRooms.put("\n" + location, "You are back at the " + location);
+                            visitedRooms.put(location, "You are back at the " + location);
                             System.out.println("\n" + nextRoom.getDescription());
                         }
 
@@ -128,7 +128,7 @@ public class Player {
                         } else {
                             // If the room does not exist in the visitedRooms HashMap, add it and display a
                             // custom description
-                            visitedRooms.put("\n" + location, "You are back at the " + location);
+                            visitedRooms.put(location, "You are back at the " + location);
                             System.out.println("\n" + nextRoom.getDescription());
                         }
 
@@ -160,7 +160,7 @@ public class Player {
                         } else {
                             // If the room does not exist in the visitedRooms HashMap, add it and display a
                             // custom description
-                            visitedRooms.put("\n" + location, "You are back at the " + location);
+                            visitedRooms.put(location, "You are back at the " + location);
                             System.out.println("\n" + nextRoom.getDescription());
                         }
 
