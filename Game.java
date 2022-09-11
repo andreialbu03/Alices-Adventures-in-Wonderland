@@ -31,7 +31,7 @@ public class Game {
         // Using the Setup class, initialize the game instance variables
         this.player = new Player("Open field");
         this.items = Setup.createItems();
-        this.NPCs = Setup.createNPCs();
+        this.NPCs = Setup.createCharacters();
         this.actions = Setup.createActions();
         this.queenItems = new HashMap<String, Item>();
 
@@ -51,7 +51,7 @@ public class Game {
         }
 
         // Create the rooms
-        this.rooms = Setup.createRooms(items, NPCs);
+        this.rooms = Setup.createLocations(items, NPCs);
     }
 
     /** Entry point of the program */
