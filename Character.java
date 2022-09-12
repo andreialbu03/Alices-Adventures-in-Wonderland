@@ -11,19 +11,19 @@
 public class Character {
 
     /** Instance variables storing attributes of an NPC */
-    private String dialog;
+    private String dialogue;
     private String location;
 
     /** Constructor for the Character class, accepts 3 parameters */
     public Character(String dialog, String location) {
         // Initializes instance variables
-        this.dialog = dialog;
+        this.dialogue = dialog;
         this.location = location;
     }
 
     /** Public method that outputs the NPC's dialog */
     public void talk() {
-        System.out.print("\n" + dialog);
+        System.out.print("\n" + dialogue);
     }
 
     /** Public getter method that returns the NPC's location */
