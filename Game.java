@@ -7,6 +7,232 @@
  * @copyright 2022 Andrei Albu
  */
 
+/**
+ * DOCUMENTATION...
+ */
+
+/**
+ * 
+ * Alice's Adventures in Wonderland
+ * 
+ * Purpose and Description
+ * 
+ * This program is a text-based adventure game based on the novel Alice's Adventures in Wonderland by Lewis Carroll. 
+ * 
+ * This program is a fun game that allows the user to explore the world of Wonderland and interact with the characters
+ * and items in the game. The user can play the game by typing in commands and the program will respond accordingly once
+ * the ENTER key is pressed.
+ * 
+ * Compiling and running instructions
+ * Compile: javac Game.java
+ * Run    : java Game
+ * 
+ */
+
+/**
+ * 
+ * Class:
+ * 
+ * public class Actions
+ * This class represents an Action object.
+ * 
+ * Constructor:
+ * 
+ * public Actions(String[] actions)
+ * Initializes the instance variable with the parameter it receives
+ * 
+ * Methods:
+ * 
+ * public String[] getActions()
+ * Getter method that returns the actions instance variable
+ * 
+ * Instance Variables:
+ * 
+ * private String[] actions
+ * A String array that holds all of the action words
+ * 
+ * ---------------------------------------------------------------------------------------------------------------------
+ * 
+ * Class:
+ * 
+ * public class Character
+ * This class represents a non-playable character (NPC) in the game. These are the characters that are spawned in the game
+ * and that the user can interact with.
+ * 
+ * Constructor:
+ * 
+ * public Character(String dialog, String location)
+ * Initializes the instance variables to the parameters it receives
+ * 
+ * Methods:
+ * 
+ * public void talk()
+ * Outputs the NPC's dialog
+ * 
+ * public String getLocation()
+ * Getter method that returns the NPC's location
+ * 
+ * Instance Variables:
+ * 
+ * private String dialogue
+ * A String that stores the text the character displays when the user talks to them
+ * 
+ * private String location
+ * A String that stores the name of the location where the NPC is located in the game
+ * 
+ * ---------------------------------------------------------------------------------------------------------------------
+ * 
+ * Class:
+ * 
+ * public class Control
+ * This class is responsible for validating the actions (or commands) the user enters. It works alongside the
+ * Actions.java class to accomplish this.
+ * 
+ * Constructor:
+ * None
+ * 
+ * Methods:
+ * 
+ * public static String checkInput(String command, HashMap<String, Actions> validActions)
+ * A static method that accepts the action (or command) entered by the user and a HashMap that contains the main action
+ * words and the Actions object as key-value pairs. It validates the action entered by the user against all the possible
+ * action words stored in the HashMap using nested for loops.
+ * 
+ * Instance Variables:
+ * None
+ * 
+ * ---------------------------------------------------------------------------------------------------------------------
+ * 
+ * Class:
+ * 
+ * public class Game
+ * This class is the highest level class of the game. It is responsible for the flow of the game and for which events
+ * happen in response to the user input.
+ * 
+ * Constructor:
+ * 
+ * public Game()
+ * Initializes all the instance variables with the help of the Setup class. It also removes the Queen of Hearts’ items
+ * from the location they spawn in.
+ * 
+ * Methods:
+ * 
+ * public static void main(String[] args)
+ * The entry point of the game which controls the entire flow of the game.
+ * 
+ * Instance Variables:
+ * 
+ * private Player player
+ * A Player object that represents the user in the game
+ * 
+ * private HashMap<String, Item> items
+ * A HashMap object that stores the name of the item and an Item object representing the object as key-value pairs
+ * 
+ * private HashMap<String, Character> NPCs
+ * A HashMap object that stores the name of the non-playable character and a Character object representing the character
+ * as key-value pairs
+ * 
+ * private HashMap<String, Location> rooms
+ * A HashMap object that stores the name of the location and a Location object representing the location as key-value
+ * pairs
+ * 
+ * private HashMap<String, Actions> actions
+ * A HashMap object that stores the main action word and an Action object representing the possible aliases as key-value
+ * pairs
+ * 
+ * private HashMap<String, Item> queenItems
+ * A HashMap object that stores the name of the Queen’s item and an Item object representing the object as key-value
+ * pairs
+ * 
+ * ---------------------------------------------------------------------------------------------------------------------
+ * 
+ * Class:
+ * 
+ * public class Inventory
+ * This class represents the inventory of the main player that is played by the user.
+ * 
+ * Constructor:
+ * 
+ * public Inventory()
+ * Initializes the instance variable with an empty object
+ * 
+ * Methods:
+ * 
+ * public int getSize()
+ * Getter method that returns the size of the inventory
+ * 
+ * public void putItem(String name, Item item)
+ * Adds an item to the inventory
+ * 
+ * public boolean contains(String name)
+ * Checks if the inventory contains an item
+ * 
+ * public void remove(String name)
+ * Removes an item from the inventory
+ * 
+ * public Item getItem(String name)
+ * Returns an item from the inventory
+ * 
+ * public Set<String> getItemsSet()
+ * Returns the keys of the inventory as a Set object
+ * 
+ * Instance Variables:
+ * 
+ * private Map<String, Item> inventory
+ * An object that stores the name of the item and an Item object representing the object as key-value pairs
+ * 
+ * ---------------------------------------------------------------------------------------------------------------------
+ * 
+ * Class:
+ * 
+ * public class Item
+ * This class represents a single item in the game.
+ * 
+ * Constructor:
+ * 
+ * public Item(String description, String location, String action, String effect)
+ * Initializes all of the instance variables to the parameters it receives
+ * 
+ * Methods:
+ * 
+ * public String getDescription()
+ * Getter method that returns the description instance variable
+ * 
+ * public String getLocation()
+ * Getter method that returns the location instance variable
+ * 
+ * public String getAction()
+ * Getter method that returns the action instance variable
+ * 
+ * public String getEffect()
+ * Getter method that returns the effect instance variable
+ * 
+ * Instance Variables:
+ * 
+ * private String description
+ * A String that stores the description of the item
+ * 
+ * private String location
+ * A String that stores the name of the location where the item is located in the game
+ * 
+ * private String action
+ * A String that stores the action that the item has on the player when used (ex. level up, shrink, grow)
+ * 
+ * private String effect
+ * A String that describes what happens to Alice when the item is used
+ * 
+ * ---------------------------------------------------------------------------------------------------------------------
+ * 
+ * Class:
+ * 
+ * Constructor:
+ * 
+ * Methods:
+ * 
+ * Instance Variables:
+ * 
+ */
+
 // Import Java packages
 import java.util.*;
 
