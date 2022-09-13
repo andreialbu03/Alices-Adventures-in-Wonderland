@@ -399,6 +399,51 @@
  * 
  */
 
+/**
+ * 
+ * Test Plan
+ * 
+ * For this program to be successful, it must be able to:
+ *      - properly load the game data from the text files
+ *      - properly create the objects using the game data
+ *      - handle invalid user input
+ *      - allow the user to win the game by meeting the win condition
+ * 
+ * 
+ * Scenario 1: The program successfully loads the game data from the text files
+ * 
+ * Input Data:
+ *     - The text files containing the game data (Instructions.txt, Characters.txt, Items.txt, Locations.txt etc.)
+ * EXPECTED:
+ *      Welcome to Alice's Adventures in Wonderland! This is a roleplaying
+ *      game based on the book by Lewis Carroll.  
+ *      
+ *      The game is set in Wonderland, a strange and magical place where
+ *      anything can happen. You will be able to explore the world of 
+ *      Wonderland and meet many strange and wonderful characters. You will
+ *      also be able to interact with various items and objects in the game.
+ *                                     . . .
+ *      To play the game, type in a command and press enter.
+ *      You can type in commands in lower or upper case, it doesn't matter.
+ *      Many commands have synonyms, so you can type in a command in a
+ *      variety of ways. For example, you can type in "go north" or "go n".
+ *      
+ *      You can type in "help" to get a list of all the commands.
+ *      
+ *      You are sitting on a tree branch in an open field, listening to you sister
+ *      read a history book. You are very bored, when you suddenly notice a talking
+ *      white rabbit with a pocket watch currying along the river bank. He quickly
+ *      goes down a dark rabbit hole.
+ *      
+ *      NOTE: The expected output should be the data in Instructions.txt and the first location's description
+ * ACTUAL:
+ *      Results displayed as expected (confirmed by running the program).
+ * 
+ * ---------------------------------------------------------------------------------------------------------------------
+ * 
+ * 
+ */
+
 // Import Java packages
 import java.util.*;
 
