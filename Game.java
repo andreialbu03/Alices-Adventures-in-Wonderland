@@ -225,6 +225,145 @@
  * 
  * Class:
  * 
+ * public class Location
+ * This class represents a single location in the game.
+ * 
+ * Constructor:
+ * 
+ * Location(String name, String description, String[] neighbours, HashMap<String, Item> items,
+ *  		HashMap<String, Character> NPCs, String[] restrictions)
+ * Initializes the instance variables to the parameters it receives. For the items and NPCs instance variables, the
+ * constructor uses helper methods to initialize them (populateItems() and populateNPCs()).
+ * 
+ * Methods:
+ * 
+ * private void populateItems(HashMap<String, Item> items)
+ * Iterates over the HashMap containing all of the items in the game and if the item’s location matches the current
+ * location, it adds the item to the location
+ * 
+ * private void populateNPCs(HashMap<String, Character> NPCs)
+ * Iterates over the HashMap containing all of the non-playable characters in the game and if the character’s location
+ * matches the current location, it adds them to the location
+ * 
+ * public void look()
+ * This method is called when the player uses the look command. It displays the information associated with the location,
+ * such as the location’s description, its neighbouring locations and the items and NPCs that exist in the location.
+ * 
+ * public String[] getNeighbours()
+ * Getter method that returns the neighbours instance variable
+ * 
+ * public HashMap<String, Item> getItems()
+ * Getter method that returns the items instance variable
+ * 
+ * public String getDescription()
+ * Getter method that returns the description instance variable
+ * 
+ * public HashMap<String, Character> getNPCs()
+ * Getter method that returns the NPCs instance variable
+ * 
+ * public String[] getRestrictions()
+ * Getter method that returns the restrictions instance variable
+ * 
+ * public void addItem(HahsMap<String, Item> items)
+ * Adds the item passed as a parameter to the room
+ * 
+ * public void removeCharacter(String name)
+ * Removes the character specified as a parameter from the room
+ * 
+ * Instance Variables:
+ * 
+ * private String name
+ * A String that stores the name of the location
+ * 
+ * private String[] neighbours
+ * An array of String objects that stores all the neighbouring rooms that can be accessed from the current room
+ * 
+ * private String description
+ * A String that stores the description of the location
+ * 
+ * private String[] restrictions
+ * An array of String objects that stores the restrictions that the player has to meet in order to access the room
+ * 
+ * private HashMap<String, Item> items
+ * A HashMap object that stores the item name and an Item object representing the item as key-value pairs
+ * 
+ * private HashMap<String, Character> NPCs
+ * A HashMap object that stores the non-playable character’s name and a Character object representing the character as
+ * key-value pairs
+ * 
+ * ---------------------------------------------------------------------------------------------------------------------
+ * 
+ * Class:
+ * 
+ * public class Player
+ * This class represents Alice in the game. This is also the main character that is played by the user.
+ * 
+ * Constructor:
+ * 
+ * Player(String startingLocation)
+ * A constructor that initializes the instance variable to default values. It initializes the location instance variable
+ * to the parameter it receives and also adds it to the visitedRooms instance variable.
+ * 
+ * Methods:
+ * 
+ * public void move(HashMap<String, Location> rooms, String direction)
+ * Moves the player to a new location if the direction is valid and if the player meets the new location’s requirements
+ * 
+ * public void add(HashMap<String, Location> rooms, String item)
+ * Adds an item to the players inventory if it exists in the location
+ * 
+ * public void drop(HashMap<String, Location> rooms, String item)
+ * Removes an item from the player’s inventory if they have it
+ * 
+ * public void getInventory()
+ * Displays all the items the player has in their inventory
+ * 
+ * public void look(String item)
+ * Used when the player wants to look at an item and displays the item’s description
+ * 
+ * public void look(HashMap<String, Location> rooms)
+ * Used when the player wants to look at the room. Calls the current room’s look method
+ * 
+ * public void talkTo(HashMap<String, Location> rooms, String npc, HashMap<String, Item> queenItems)
+ * Outputs the non-playable character’s dialogue if they exist in the room
+ * 
+ * public void use(String item)
+ * Uses an item if it exists in the player’s inventory
+ * 
+ * private boolean shrink()
+ * Shrinks the player down a size
+ * 
+ * private boolean grow()
+ * Grows the player up a size
+ * 
+ * private boolean isValidLocation(Location nextRoom)
+ * Helper method that checks if the player can move to an adjacent location. It does this by ensuring the player meets
+ * the location’s restrictions
+ * 
+ * private void addQueenItemsToRoom(HashMap<String, Location> rooms, HashMap<String, Item> items)
+ * Adds the Queen’s items to the room and also removes the Queen from the room
+ * 
+ * public boolean hasWon()
+ * Checks if the player has met the win condition of the game
+ * 
+ * public String getSize()
+ * Getter method that returns the size instance variable
+ * 
+ * public String getLocation()
+ * Getter method that returns the location instance variable
+ * 
+ * public int getLevel()
+ * Getter method that returns the level instance variable
+ * 
+ * private void levelUp()
+ * Levels up the player
+ * 
+ * Instance Variables:
+ * 
+ * ---------------------------------------------------------------------------------------------------------------------
+ * 
+ * Class:
+ * 
  * Constructor:
  * 
  * Methods:
