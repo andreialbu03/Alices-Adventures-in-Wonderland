@@ -364,11 +364,38 @@
  * 
  * Class:
  * 
- * Constructor:
+ * public class Setup
+ * This class is used to set up and initialize the game with the characters, items, locations etc.
  * 
- * Methods:
+ * Constructor:
+ * None
+ * 
+ * Methods
+ * 
+ * public static HashMap<String, Item> createItems()
+ * Loads the item data from Items.txt and create Item objects using it
+ * 
+ * public static HashMap<String, Location> createLocations(HashMap<String, Item> items,
+ *         HashMap<String, Character> NPCs)
+ * Loads the location data from Locations.txt and creates Location objects using it
+ * 
+ * public static HashMap<String, Actions> createActions()
+ * Loads the action words from Actions.txt and creates Action objects using it
+ * 
+ * public static HashMap<String, Character> createCharacters()
+ * Loads the character data from Characters.txt and creates Character objects using it
+ * 
+ * public static String gameInstructions()
+ * Loads the data in Instructions.txt and returns it
+ * 
+ * public static String help()
+ * Loads the data in Actions.txt and returns it in the form of a help menu
+ * 
+ * public static String win()
+ * Loads the data in Win.txt and returns it
  * 
  * Instance Variables:
+ * None
  * 
  */
 
