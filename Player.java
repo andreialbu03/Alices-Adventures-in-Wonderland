@@ -119,7 +119,7 @@ public class Player {
                     if (isValidLocation(nextRoom)) {
                         // If the player is eligible, move them to the room
                         location = neighbours[2];
-                        System.out.println("\nYou move south to the " + neighbours[2] + ".");
+                        System.out.println("\nYou move east to the " + neighbours[2] + ".");
 
                         if (visitedRooms.containsKey(location)) {
                             // If the room already exists in the visitedRooms HashMap, display its
@@ -151,7 +151,7 @@ public class Player {
                     if (isValidLocation(nextRoom)) {
                         // If the player is eligible, move them to the room
                         location = neighbours[3];
-                        System.out.println("\nYou move south to the " + neighbours[3] + ".");
+                        System.out.println("\nYou move west to the " + neighbours[3] + ".");
 
                         if (visitedRooms.containsKey(location)) {
                             // If the room already exists in the visitedRooms HashMap, display its
