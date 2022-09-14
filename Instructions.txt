@@ -16,4 +16,7 @@ You can type in commands in lower or upper case, it doesn't matter.
 Many commands have synonyms, so you can type in a command in a
 variety of ways. For example, you can type in "go north" or "go n".
 
+Use the "examine" or "look" command to see what options are available to
+you in a room. These can also be used on items.
+
 You can type in "help" to get a list of all the commands.

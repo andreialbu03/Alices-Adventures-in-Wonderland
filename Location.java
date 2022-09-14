@@ -65,7 +65,7 @@ public class Location {
 		System.out.println("\n" + description);
 
 		// Output neighbouring rooms
-		System.out.println("Can exit to the ");
+		System.out.println("Can go to the ");
 
 		// If "-" does not appear, player can exit in that direction
 		if (!neighbours[0].equals("-")) {

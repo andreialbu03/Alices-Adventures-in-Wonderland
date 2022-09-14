@@ -323,7 +323,7 @@ EXPECTED:
     Input: go n                                     -> Output: You have entered a safe roof. Use this room to use certain items in order to level up.       
     Input: go s (does not meet room requirements)   -> Output: You do not meet the level or size requirements to go that way.
     Input: go west                                  -> Output: You move west to the Forest.
-                                                               You are in the forest and see a large, purple talk laying lazily on a tree branch.
+                                                               You are in the forest and see a large, purple cat laying lazily on a tree branch.
     Input: go west (after already visiting west)    -> Output: You move west to the Forest.
                                                                You are back at the forest.                                                          
     Input: get seashell                             -> Output: You picked up the seashell and place it in your inventory.
@@ -508,7 +508,7 @@ EXPECTED:
     Input: drop cat fur (item in inventory)         -> Output: You dropped the cat fur and placed it in the room.
     Input: location                                 -> Output: You are at the Forest
     Input: where                                    -> Output: You are at the Forest
-    Input: look                                     -> Output: You are in the forest and see a large, purple talk laying lazily on a tree branch.
+    Input: look                                     -> Output: You are in the forest and see a large, purple cat laying lazily on a tree branch.
 
                                                                Can exit to the 
                                                                SOUTH, EAST, 
@@ -516,7 +516,7 @@ EXPECTED:
                                                                cat fur, red mushroom, are in the room.
 
                                                                You can talk to cheshire cat, 
-    Input: examine                                  -> Output: You are in the forest and see a large, purple talk laying lazily on a tree branch.
+    Input: examine                                  -> Output: You are in the forest and see a large, purple cat laying lazily on a tree branch.
 
                                                                Can exit to the 
                                                                SOUTH, EAST, 

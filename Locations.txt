@@ -43,7 +43,7 @@ END
 Forest
 -,Tea Party,-,Sea
 none
-You are in the forest and see a large, purple talk laying lazily on a tree branch.
+You are in the forest and see a large, purple cat laying lazily on a tree branch.
 END
 Tea Party
 Sea,Queen's Palace,-,-
