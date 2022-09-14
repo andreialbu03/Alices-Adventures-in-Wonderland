@@ -314,11 +314,12 @@ ACTUAL:
 
 Location 4: Sea
 
+NOTE: To get to this location, the user must be small in size.
+
 
 Scenario: The program works correctly when the user enters valid input
 
 EXPECTED:
-    Input: move east                                -> Output: You cannot go that way.
     Input: go n                                     -> Output: You have entered a safe roof. Use this room to use certain items in order to level up.       
     Input: go s (does not meet room requirements)   -> Output: You do not meet the level or size requirements to go that way.
     Input: go west                                  -> Output: You move west to the Forest.
@@ -389,7 +390,7 @@ Scenario: The program works handles invalid commands appropriately
 
 EXPECTED:
     Input: move                              -> Output: You must specify a direction to move. Try 'move <direction>'.
-    Input: move e                            -> Output: You cannot go that way.
+    Input: move w                            -> Output: You cannot go that way.
     Input: pick wasd                         -> Output: There is no wasd in this room.
     Input: drop wasd                         -> Output: You do not have the wasd in your inventory.
     Input: look eeeeee                       -> Output: You do not have the eeeeee in your inventory.
@@ -478,6 +479,287 @@ EXPECTED:
     Input:  look (leading whitespace)        -> Output: Invalid command.
     Input: lvl  (trailing whitespace)        -> Output: You are level 0
     Input: lvl . (trailing period)           -> Output: You are level 0
+    Input: uSe sEaShElL                      -> Output: As expected above (case insensitive)
+
+ACTUAL:
+    Results displayed as expected (confirmed by running the program).
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Location 6: Forest
+
+
+Scenario: The program works correctly when the user enters valid input
+
+EXPECTED:
+    Input: move north                               -> Output: You cannot go that way.
+    Input: move s (does not meet room requirements) -> Output: You do not meet the level or size requirements to go that way.
+    Input: go w                                     -> Output: You move east to the Sea.
+                                                               You are back at the Sea                                                         
+    Input: pick cat fur                             -> Output: You picked up the cat fur and place it in your inventory.
+    Input: get red mushroom                         -> Output: You picked up the red mushroom and place it in your inventory.
+    Input: get cat fur (already in inventory)       -> Output: There is no cat fur in this room.
+    Input: inventory (both items in inventory)      -> Output: You have the following items in your inventory:
+                                                               - cat fur
+                                                               - red mushroom
+    Input: i (both items in inventory)              -> Output: You have the following items in your inventory:
+                                                               - cat fur
+                                                               - red mushroom
+    Input: drop cat fur (item in inventory)         -> Output: You dropped the cat fur and placed it in the room.
+    Input: location                                 -> Output: You are at the Forest
+    Input: where                                    -> Output: You are at the Forest
+    Input: look                                     -> Output: You are in the forest and see a large, purple talk laying lazily on a tree branch.
+
+                                                               Can exit to the 
+                                                               SOUTH, EAST, 
+
+                                                               cat fur, red mushroom, are in the room.
+
+                                                               You can talk to cheshire cat, 
+    Input: examine                                  -> Output: You are in the forest and see a large, purple talk laying lazily on a tree branch.
+
+                                                               Can exit to the 
+                                                               SOUTH, EAST, 
+
+                                                               cat fur, red mushroom, are in the room.
+
+                                                               You can talk to cheshire cat, 
+    Input: exit                                     -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: quit                                     -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: q                                        -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: lvl   (after using seashell)             -> Output: You are level 1
+    Input: size                                     -> Output: You are small.
+    Input: height                                   -> Output: You are small.
+    Input: help                                     -> Output: The following are the commands that are available to you:
+                            
+                                                               move,go
+                                                               get,pick
+                                                               drop
+                                                               ...
+                                                               help
+                                                               size,height
+
+                                                               All commands on the same line act as synonyms and all are are case insensitive.
+    Input: speak cheshire cat                       -> Output: Imagination is the only weapon in the war with reality! We’re all mad here. I’m mad.
+                                                               You’re mad. You might think I am crazy but I am not crazy; my reality is just different
+                                                               from yours.
+
+                                                               If you haven't seen them yet, the Mad Hatter and the March Hare are having a tea party!
+                                                               Visit either you like: they’re both mad.
+
+ACTUAL:
+    Results displayed as expected (confirmed by running the program).
+
+----------------------------------------------------------------------------------------
+
+Scenario: The program works handles invalid commands appropriately
+
+EXPECTED:
+    Input: move                              -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: move e                            -> Output: You cannot go that way.
+    Input: pick wasd                         -> Output: There is no wasd in this room.
+    Input: drop wasd                         -> Output: You do not have the wasd in your inventory.
+    Input: look eeeeee                       -> Output: You do not have the eeeeee in your inventory.
+    Input: ring doorbell                     -> Output: Invalid command.
+    Input: use looifds                       -> Output: You do not have the looifds in your inventory.
+    Input: talk garfield                     -> Output: garfield is not in this room.
+    Input: rreeeeee fffffff                  -> Output: Invalid command.
+    Input: use cat fur (not in inventory)    -> Output: You do not have the red fur in your inventory.
+    Input: use cat fur (in inventory)        -> Output: This item cannot be used.
+    Input:  look (leading whitespace)        -> Output: Invalid command.
+    Input: lvl  (trailing whitespace)        -> Output: You are level 0
+    Input: lvl . (trailing period)           -> Output: You are level 0
+    Input: talk ChEShIrE cAt                 -> As expected above (case insensitive)
+
+ACTUAL:
+    Results displayed as expected (confirmed by running the program).
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Location 7: Tea party
+
+NOTE: To get to this location, the user must be level 2.
+
+
+Scenario: The program works correctly when the user enters valid input
+
+EXPECTED:
+    Input: move east                                    -> Output: You cannot go that way.
+    Input: move s (does not meet room requirements)     -> Output: You do not meet the level or size requirements to go that way.
+    Input: go n                                         -> Output: You move north to the Sea.
+                                                                   You are back at the Sea                                                         
+    Input: pick mad hatter's hat                        -> Output: You picked up the mad hatter's hat and place it in your inventory.
+    Input: get teacup                                   -> Output: You picked up the teacup it in your inventory.
+    Input: get march hare's bow tie                     -> Output: You picked up the march hare's bow tie and place it in your inventory.
+    Input: pick mad hatter's bandolier                  -> Output: You picked up the mad hatter's bandolier and place it in your inventory.
+    Input: pick teacup (already in inventory)           -> Output: There is no teacup in this room.
+    Input: inventory (all 4 items in inventory)         -> Output: You have the following items in your inventory:
+                                                                   - mad hatter's hat
+                                                                   - teacup
+                                                                   - march hare's bow tie
+                                                                   - mad hatter's bandolier
+    Input: drop mad hatter's hat (item in inventory)    -> Output: You dropped the mad hatter's hat and placed it in the room.
+    Input: drop mad hatter's hat (not in inventory)     -> Output: You do not have the mad hatter's hat in your inventory.
+
+    Input: location                                     -> Output: You are at the Tea Party
+    Input: where                                        -> Output: You are at the Tea Party
+    Input: look                                         -> Output: You are at a tea party. You see the Mad Hatter, the March Hare.
+
+                                                                   Can exit to the 
+                                                                   NORTH, SOUTH, 
+
+                                                                   mad hatter's hat, teacup, march hare's bow tie, mad hatter's bandolier, are in the room.
+
+                                                                   You can talk to mad hatter, march hare, 
+    Input: examine                                      -> Output: You are at a tea party. You see the Mad Hatter, the March Hare.
+
+                                                                   Can exit to the 
+                                                                   NORTH, SOUTH, 
+
+                                                                   mad hatter's hat, teacup, march hare's bow tie, mad hatter's bandolier, are in the room.
+
+                                                                   You can talk to mad hatter, march hare, 
+    Input: exit                                         -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: quit                                         -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: q                                            -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: lvl                                          -> Output: You are level 2
+    Input: size                                         -> Output: You are small.
+    Input: height                                       -> Output: You are small.
+    Input: help                                         -> Output: The following are the commands that are available to you:
+                            
+                                                                   move,go
+                                                                   get,pick
+                                                                   drop
+                                                                   ...
+                                                                   help
+                                                                   size,height
+
+                                                                   All commands on the same line act as synonyms and all are are case insensitive.
+    Input: speak mad hatter                             -> Output: Hello there! what a small world it is! I'm the Mad Hatter, and this is my birthday tea
+                                                                   party. I'm so glad you could join us! I'm sure you'll have a wonderful time!
+
+                                                                   Actually when I think about it, this is an unbirthday party!
+    Input: talk march hare                              -> Output: Hello dear! Have some wine! You say you don't see any wine? That's because there is no
+                                                                   wine at the table! You see, we're having an unbirthday party! It's a very special day
+                                                                   for us, because it's the day we celebrate our unbirthday!
+
+ACTUAL:
+    Results displayed as expected (confirmed by running the program).
+
+----------------------------------------------------------------------------------------
+
+Scenario: The program works handles invalid commands appropriately
+
+EXPECTED:
+    Input: move                                    -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: go e                                    -> Output: You cannot go that way.
+    Input: pick wasd                               -> Output: There is no wasd in this room.
+    Input: drop wasd                               -> Output: You do not have the wasd in your inventory.
+    Input: look eeeeee                             -> Output: You do not have the eeeeee in your inventory.
+    Input: ring doorbell                           -> Output: Invalid command.
+    Input: use looifds                             -> Output: You do not have the looifds in your inventory.
+    Input: talk garfield                           -> Output: garfield is not in this room.
+    Input: rreeeeee fffffff                        -> Output: Invalid command.
+    Input: use teacup (not in inventory)           -> Output: You do not have the teacup in your inventory.
+    Input: use teacup (in inventory)               -> Output: You cannot use this item here.
+    Input: use march hare's bow tie (in inventory) -> Output: You cannot use this item here.
+    Input:  look (leading whitespace)              -> Output: Invalid command.
+    Input: lvl  (trailing whitespace)              -> Output: You are level 2
+    Input: lvl . (trailing period)                 -> Output: You are level 2
+    Input: tAlK mArcH HaRe                         -> As expected above (case insensitive)
+
+ACTUAL:
+    Results displayed as expected (confirmed by running the program).
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Location 8: Queen's Palace
+
+NOTE: To get to this location, the user must be level 6.
+
+
+Scenario: The program works correctly when the user enters valid input
+
+EXPECTED:
+    Input: go n                                                     -> Output: You move north to the Tea Party.
+                                                                               You are back at the Tea Party  
+    Input: talk queen of hearts                                     -> Output: How dare you come to my royal palace! I am the Queen of Hearts, and I will not
+                                                                               tolerate any nonsense! I will have your head for this!
+
+                                                                               Noooo! You can't cut off my head! I'm not a head! I'm the Queen of Hearts!
+    Input: speak queen of hearts                                    -> Output: How dare you come to my royal palace! I am the Queen of Hearts, and I will not
+                                                                               tolerate any nonsense! I will have your head for this!
+
+                                                                               Noooo! You can't cut off my head! I'm not a head! I'm the Queen of Hearts!
+    Input: look (before talking to queen)                           -> Output: You are in the Queen's Palace. You see the Queen of Hearts.
+
+                                                                               Can exit to the 
+                                                                               NORTH, 
+
+                                                                               No items in room, sorry.
+
+                                                                               You can talk to queen of hearts, 
+    Input: examine (after talking to queen)                         -> Output: You are in the Queen's Palace. You see the Queen of Hearts.
+
+                                                                               Can exit to the 
+                                                                               NORTH, 
+
+                                                                               queen's staff, queen's pearl necklace, are in the room.
+
+                                                                               There is no one to talk to in this room.
+    Input: pick queen's staff (after talking to queen)              -> Output: You picked up the queen's staff and place it in your inventory.
+    Input: get queen's pearl necklace (after picking queen's staff) -> Output: You picked up the queen's pearl necklace and place it in your inventory.
+
+                                                                               You have beat the game and won! 
+
+                                                                               Congratulations!
+    Input: inventory (after picking only queen's staff)             -> Output: You have the following items in your inventory:
+                                                                               - queen's staff
+    Input: drop queen's staff (item in inventory)                   -> Output: You dropped the queen's staff and placed it in the room.
+    Input: drop queen's staff (item not in inventory)               -> Output: You do not have the queen's staff in your inventory.
+    Input: location                                                 -> Output: You are at the Queen's Palace
+    Input: where                                                    -> Output: You are at the Queen's Palace
+    Input: exit                                                     -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: quit                                                     -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: q                                                        -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: lvl                                                      -> Output: You are level 6
+    Input: size                                                     -> Output: You are small.
+    Input: height                                                   -> Output: You are small.
+    Input: help                                                     -> Output: The following are the commands that are available to you:
+                            
+                                                                               move,go
+                                                                               get,pick
+                                                                               drop
+                                                                               ...
+                                                                               help
+                                                                               size,height
+
+                                                                               All commands on the same line act as synonyms and all are are case insensitive.
+
+ACTUAL:
+    Results displayed as expected (confirmed by running the program).
+
+----------------------------------------------------------------------------------------
+
+Scenario: The program works handles invalid commands appropriately
+
+EXPECTED:
+    Input: move                                         -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: go E                                         -> Output: You cannot go that way.
+    Input: pick wasd                                    -> Output: There is no wasd in this room.
+    Input: drop wasd                                    -> Output: You do not have the wasd in your inventory.
+    Input: look eeeeee                                  -> Output: You do not have the eeeeee in your inventory.
+    Input: ring doorbell                                -> Output: Invalid command.
+    Input: use looifds                                  -> Output: You do not have the looifds in your inventory.
+    Input: talk garfield                                -> Output: garfield is not in this room.
+    Input: rreeeeee fffffff                             -> Output: Invalid command.
+    Input: use queen's staff (not in inventory)         -> Output: You do not have the queen's staff in your inventory.
+    Input: use queen's staff (in inventory)             -> Output: This item cannot be used.
+    Input: use queen's pearl necklace (in inventory)    -> Output: This item cannot be used.
+    Input:  look (leading whitespace)                   -> Output: Invalid command.
+    Input: lvl  (trailing whitespace)                   -> Output: You are level 2
+    Input: lvl . (trailing period)                      -> Output: You are level 2
+    Input: tAlK QuEEn oF HeArtS                         -> As expected above (case insensitive)
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
