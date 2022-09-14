@@ -9,75 +9,75 @@ Location 1: Open field
 Scenario: The program works correctly when the user enters valid input
 
 EXPECTED:
-    Input #1: move north                                            -> Output #1: You move north to the Rabbit hole. \n You follow the White Rabbit through the rabbit hole. Inside, its very tight 
-                                                                                and dark.
+    Input: move north                                           -> Output: You move north to the Rabbit hole. \n You follow the White Rabbit through the rabbit hole. Inside, its very tight 
+                                                                            and dark.
                                                                                                                     ...
-                                                                                You see the white rabbit go through a door, possibly leading to a new room. You
-                                                                                think you saw a table while the door was ajar, but you also hit your head while
-                                                                                falling.
-    Input #2: go n                                                  -> Output #2: You move north to the Rabbit hole. \n You follow the White Rabbit through the rabbit hole. Inside, its very tight 
-                                                                                and dark.
+                                                                            You see the white rabbit go through a door, possibly leading to a new room. You
+                                                                            think you saw a table while the door was ajar, but you also hit your head while
+                                                                            falling.
+    Input: go n                                                 -> Output: You move north to the Rabbit hole. \n You follow the White Rabbit through the rabbit hole. Inside, its very tight 
+                                                                            and dark.
                                                                                                                     ...
-                                                                                You see the white rabbit go through a door, possibly leading to a new room. You
-                                                                                think you saw a table while the door was ajar, but you also hit your head while
-                                                                                falling.
-    Input #3: get sister's history book                             -> Output #3: You picked up the sister's history book and place it in your inventory.
-    Input #4: pick sister's history book                            -> Output #4: You picked up the sister's history book and place it in your inventory.
-    Input #5: drop sister's history book (item in inventory)        -> Output #5: You dropped the sister's history book and placed it in the room.
-    Input #6: drop sister's history book (item not in inventory)    -> Output #6: You do not have the sister's history book in your inventory.
-    Input #7: inventory (item in inventory)                         -> Output #7: You have the following items in your inventory: 
-                                                                                  - sister's history book
-    Input #8: inventory (no item in inventory)                      -> Output #8: You have no items in your inventory.
-    Input #9: i (item in inventory)                                 -> Output #9: You have the following items in your inventory: 
-                                                                                  - sister's history book
-    Input #10: i (no item in inventory)                             -> Output #10: You have no items in your inventory.
-    Input #11: location                                             -> Output #11: You are at the Open field.
-    Input #12: where                                                -> Output #12: You are at the Open field.
-    Input #13: look                                                 -> Output #13: You are sitting on a tree branch in an open field, listening to you sister
-                                                                                   read a history book. You are very bored, when you suddenly notice a talking
-                                                                                   white rabbit with a pocket watch currying along the river bank. He quickly
-                                                                                   goes down a dark rabbit hole.
+                                                                            You see the white rabbit go through a door, possibly leading to a new room. You
+                                                                            think you saw a table while the door was ajar, but you also hit your head while
+                                                                            falling.
+    Input: get sister's history book                            -> Output: You picked up the sister's history book and place it in your inventory.
+    Input: pick sister's history book                           -> Output: You picked up the sister's history book and place it in your inventory.
+    Input: drop sister's history book (item in inventory)       -> Output: You dropped the sister's history book and placed it in the room.
+    Input: drop sister's history book (item not in inventory)   -> Output: You do not have the sister's history book in your inventory.
+    Input: inventory (item in inventory)                        -> Output: You have the following items in your inventory: 
+                                                                           - sister's history book
+    Input: inventory (no item in inventory)                     -> Output: You have no items in your inventory.
+    Input: i (item in inventory)                                -> Output: You have the following items in your inventory: 
+                                                                           - sister's history book
+    Input: i (no item in inventory)                             -> Output: You have no items in your inventory.
+    Input: location                                             -> Output: You are at the Open field.
+    Input: where                                                -> Output: You are at the Open field.
+    Input: look                                                 -> Output: You are sitting on a tree branch in an open field, listening to you sister
+                                                                           read a history book. You are very bored, when you suddenly notice a talking
+                                                                           white rabbit with a pocket watch currying along the river bank. He quickly
+                                                                           goes down a dark rabbit hole.
 
-                                                                                   Can exit to the 
-                                                                                   NORTH, 
+                                                                           Can exit to the 
+                                                                           NORTH, 
 
-                                                                                   sister's history book, is in the room.
+                                                                           sister's history book, is in the room.
 
-                                                                                   You can talk to dinah, white rabbit, sister, or the cat.
-    Input #14: examine                                              -> Output #14: You are sitting on a tree branch in an open field, listening to you sister
-                                                                                   read a history book. You are very bored, when you suddenly notice a talking
-                                                                                   white rabbit with a pocket watch currying along the river bank. He quickly
-                                                                                   goes down a dark rabbit hole.
+                                                                           You can talk to dinah, white rabbit, sister, or the cat.
+    Input: examine                                              -> Output: You are sitting on a tree branch in an open field, listening to you sister
+                                                                           read a history book. You are very bored, when you suddenly notice a talking
+                                                                           white rabbit with a pocket watch currying along the river bank. He quickly
+                                                                           goes down a dark rabbit hole.
+                                                                            
+                                                                           Can exit to the 
+                                                                           NORTH, 
+
+                                                                           sister's history book, is in the room.
+
+                                                                           You can talk to dinah, white rabbit, sister, 
+    Input: exit                                                 -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: quit                                                 -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: q                                                    -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: talk dinah                                           -> Output: Dinah: Meow meow puurrrr
+    Input: speak white rabbit                                   -> Output: I'm late, I'm late, I'm late! I can't be late, must hurry, hurry, hurry!
+    Input: talk sister                                          -> Output: Alice, why aren't you paying attention to the book? You know that you will have to
+                                                                           start reading book without pictures! And this is an important history lesson, so pay
+                                                                           attention.
+    Input: level                                                -> Output: You are level 0 
+    Input: lvl                                                  -> Output: You are level 0
+    Input: size                                                 -> Output: You are normal.
+    Input: height                                               -> Output: You are normal.
+    Input: help                                                 -> Output: The following are the commands that are available to you:
                                                                                 
-                                                                                   Can exit to the 
-                                                                                   NORTH, 
+                                                                           move,go
+                                                                           get,pick
+                                                                           drop
+                                                                           ...
+                                                                           help
+                                                                           size,height
 
-                                                                                   sister's history book, is in the room.
-
-                                                                                   You can talk to dinah, white rabbit, sister, 
-    Input #15: exit                                                 -> Output #15: Sorry to see you go. Goodbye! (Program quits)
-    Input #16: quit                                                 -> Output #16: Sorry to see you go. Goodbye! (Program quits)
-    Input #17: q                                                    -> Output #17: Sorry to see you go. Goodbye! (Program quits)
-    Input #18: talk dinah                                           -> Output #18: Dinah: Meow meow puurrrr
-    Input #19: speak white rabbit                                   -> Output #19: I'm late, I'm late, I'm late! I can't be late, must hurry, hurry, hurry!
-    Input #20: talk sister                                          -> Output #20: Alice, why aren't you paying attention to the book? You know that you will have to
-                                                                                   start reading book without pictures! And this is an important history lesson, so pay
-                                                                                   attention.
-    Input #21: level                                                -> Output #21: You are level 0
-    Input #22: lvl                                                  -> Output #22: You are level 0
-    Input #23: size                                                 -> Output #23: You are normal.
-    Input #24: height                                               -> Output #24: You are normal.
-    Input #25: help                                                 -> Output #25: The following are the commands that are available to you:
-                                                                                
-                                                                                   move,go
-                                                                                   get,pick
-                                                                                   drop
-                                                                                   ...
-                                                                                   help
-                                                                                   size,height
-
-                                                                                   All commands on the same line act as synonyms and all are are case insensitive.
-    Input #26: look sister's history book (item in inventory)       -> Output #26: A history book that belonged to your sister. It's a bit worn, but you can still read it.
+                                                                           All commands on the same line act as synonyms and all are are case insensitive.
+    Input: look sister's history book (item in inventory)       -> Output: A history book that belonged to your sister. It's a bit worn, but you can still read it.
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
@@ -87,18 +87,19 @@ ACTUAL:
 Scenario: The program works handles invalid commands appropriately
 
 EXPECTED:
-    Input #1: move                                          -> Output #1: You must specify a direction to move. Try 'move <direction>'.
-    Input #2: move e                                        -> Output #2: You cannot go that way.
-    Input #3: go south                                      -> Output #3: You cannot go that way.
-    Input #4: pick wasd                                     -> Output #4: There is no wasd in this room.
-    Input #5: drop wasd                                     -> Output #5: You do not have the wasd in your inventory.
-    Input #6: look eeeeee                                   -> Output #6: You do not have the eeeeee in your inventory.
-    Input #7: ring doorbell                                 -> Output #7: Invalid command.
-    Input #8: use sister's history book (item in inventory) -> Output #8: You cannot use this item here.
-    Input #9: talk garfield                                 -> Output #9: garfield is not in this room.
-    Input #10: rreeeeee fffffff                             -> Output #10: Invalid command.
-    Input #11:  look (leading whitespace) -> Output #12: Invalid command.
-    Input #12: lvl  (trailing whitespace) -> Output #13: You are level 0
+    Input: move                                          -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: move e                                        -> Output: You cannot go that way.
+    Input: go south                                      -> Output: You cannot go that way.
+    Input: pick wasd                                     -> Output: There is no wasd in this room.
+    Input: drop wasd                                     -> Output: You do not have the wasd in your inventory.
+    Input: look eeeeee                                   -> Output: You do not have the eeeeee in your inventory.
+    Input: ring doorbell                                 -> Output: Invalid command.
+    Input: use sister's history book (item in inventory) -> Output: You cannot use this item here.
+    Input: talk garfield                                 -> Output: garfield is not in this room.
+    Input: rreeeeee fffffff                              -> Output: Invalid command.
+    Input:  look (leading whitespace)                    -> Output: Invalid command.
+    Input: lvl  (trailing whitespace)                    -> Output: You are level 0
+    Input: lvl . (trailing period)                       -> Output: You are level 0
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
@@ -111,76 +112,76 @@ Location 2: Rabbit hole
 Scenario: The program works correctly when the user enters valid input
 
 EXPECTED:
-    Input #1: move north                                                -> Output #1: You move north to the Room with a table.
+    Input: move north                                               -> Output: You move north to the Room with a table.
 
-                                                                                      You see a tiny door, through which you assume the rabbit went through. But you 
-                                                                                      cannot believe your eyes, you think you just saw the doorknob on the door move!
-                                                                                      You also see the table you previously saw and on it are several unknown potions.
-    Input #2: go n                                                      -> Output #2: You move north to the Room with a table.
+                                                                               You see a tiny door, through which you assume the rabbit went through. But you 
+                                                                               cannot believe your eyes, you think you just saw the doorknob on the door move!
+                                                                               You also see the table you previously saw and on it are several unknown potions.
+    Input: go n                                                     -> Output: You move north to the Room with a table.
                                 
-                                                                                      You see a tiny door, through which you assume the rabbit went through. But you 
-                                                                                      cannot believe your eyes, you think you just saw the doorknob on the door move!
-                                                                                      You also see the table you previously saw and on it are several unknown potions.
-    Input #3: get white rabbit's pocket watch                           -> Output #3: You picked up the white rabbit's pocket watch and place it in your inventory.
-    Input #4: pick white rabbit's pocket watch                          -> Output #4: You picked up the white rabbit's pocket watch and place it in your inventory.
-    Input #5: drop white rabbit's pocket watch (item in inventory)      -> Output #5: You dropped the white rabbit's pocket watch and placed it in the room.
-    Input #6: drop white rabbit's pocket watch (item not in inventory)  -> Output #6: You do not have the white rabbit's pocket watch in your inventory.
-    Input #7: inventory (item in inventory)                             -> Output #7: You have the following items in your inventory:
-                                                                                      - white rabbit's pocket watch
-    Input #8: inventory (no item in inventory)                          -> Output #8: You have no items in your inventory.
-    Input #9: i (item in inventory)                                     -> Output #9: You have the following items in your inventory:
-                                                                                      - white rabbit's pocket watch
-    Input #10: i (no item in inventory)                                 -> Output #10: You have no items in your inventory.
-    Input #11: location                                                 -> Output #11: You are at the Rabbit hole
-    Input #12: where                                                    -> Output #12: You are at the Rabbit hole
-    Input #13: look                                                     -> Output #13: You follow the White Rabbit through the rabbit hole. Inside, its very tight and
-                                                                                       dark. Suddenly, you fall down a hole you didn't see. While falling, you see many
-                                                                                       strange objects such as a grandfather clock, mirrors, and beds. You cleverly use
-                                                                                       your dress to parachute down and finally land in a room with checkered flooring.
+                                                                               You see a tiny door, through which you assume the rabbit went through. But you 
+                                                                               cannot believe your eyes, you think you just saw the doorknob on the door move!
+                                                                               You also see the table you previously saw and on it are several unknown potions.
+    Input: get white rabbit's pocket watch                          -> Output: You picked up the white rabbit's pocket watch and place it in your inventory.
+    Input: pick white rabbit's pocket watch                         -> Output: You picked up the white rabbit's pocket watch and place it in your inventory.
+    Input: drop white rabbit's pocket watch (item in inventory)     -> Output: You dropped the white rabbit's pocket watch and placed it in the room.
+    Input: drop white rabbit's pocket watch (item not in inventory) -> Output: You do not have the white rabbit's pocket watch in your inventory.
+    Input: inventory (item in inventory)                            -> Output: You have the following items in your inventory:
+                                                                               - white rabbit's pocket watch
+    Input: inventory (no item in inventory)                         -> Output: You have no items in your inventory.
+    Input: i (item in inventory)                                    -> Output: You have the following items in your inventory:
+                                                                               - white rabbit's pocket watch
+    Input: i (no item in inventory)                                 -> Output: You have no items in your inventory.
+    Input: location                                                 -> Output: You are at the Rabbit hole
+    Input: where                                                    -> Output: You are at the Rabbit hole
+    Input: look                                                     -> Output: You follow the White Rabbit through the rabbit hole. Inside, its very tight and
+                                                                               dark. Suddenly, you fall down a hole you didn't see. While falling, you see many
+                                                                               strange objects such as a grandfather clock, mirrors, and beds. You cleverly use
+                                                                               your dress to parachute down and finally land in a room with checkered flooring.
 
-                                                                                       You see the white rabbit go through a door, possibly leading to a new room. You
-                                                                                       think you saw a table while the door was ajar, but you also hit your head while
-                                                                                       falling.
+                                                                               You see the white rabbit go through a door, possibly leading to a new room. You
+                                                                               think you saw a table while the door was ajar, but you also hit your head while
+                                                                               falling.
 
-                                                                                       Can exit to the 
-                                                                                       NORTH, 
+                                                                               Can exit to the 
+                                                                               NORTH, 
 
-                                                                                       No items in room, sorry.
+                                                                               No items in room, sorry.
 
-                                                                                       There is no one to talk to in this room.
-    Input #14: examine                                                  -> Output #14: You follow the White Rabbit through the rabbit hole. Inside, its very tight and
-                                                                                       dark. Suddenly, you fall down a hole you didn't see. While falling, you see many
-                                                                                       strange objects such as a grandfather clock, mirrors, and beds. You cleverly use
-                                                                                       your dress to parachute down and finally land in a room with checkered flooring.
+                                                                               There is no one to talk to in this room.
+    Input: examine                                                  -> Output: You follow the White Rabbit through the rabbit hole. Inside, its very tight and
+                                                                               dark. Suddenly, you fall down a hole you didn't see. While falling, you see many
+                                                                               strange objects such as a grandfather clock, mirrors, and beds. You cleverly use
+                                                                               your dress to parachute down and finally land in a room with checkered flooring.
 
-                                                                                       You see the white rabbit go through a door, possibly leading to a new room. You
-                                                                                       think you saw a table while the door was ajar, but you also hit your head while
-                                                                                       falling.
+                                                                               You see the white rabbit go through a door, possibly leading to a new room. You
+                                                                               think you saw a table while the door was ajar, but you also hit your head while
+                                                                               falling.
 
-                                                                                       Can exit to the 
-                                                                                       NORTH, 
+                                                                               Can exit to the 
+                                                                               NORTH, 
 
-                                                                                       No items in room, sorry.
+                                                                               No items in room, sorry.
 
-                                                                                       There is no one to talk to in this room.
-    Input #15: exit                                                     -> Output #15: Sorry to see you go. Goodbye! (Program quits)
-    Input #16: quit                                                     -> Output #16: Sorry to see you go. Goodbye! (Program quits)
-    Input #17: q                                                        -> Output #17: Sorry to see you go. Goodbye! (Program quits)
-    Input #21: level                                                    -> Output #21: You are level 0
-    Input #22: lvl                                                      -> Output #22: You are level 0
-    Input #23: size                                                     -> Output #23: You are normal.
-    Input #24: height                                                   -> Output #24: You are normal.
-    Input #25: help                                                     -> Output #25: The following are the commands that are available to you:
+                                                                               There is no one to talk to in this room.
+    Input: exit                                                     -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: quit                                                     -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: q                                                        -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: level                                                    -> Output: You are level 0
+    Input: lvl                                                      -> Output: You are level 0
+    Input: size                                                     -> Output: You are normal.
+    Input: height                                                   -> Output: You are normal.
+    Input: help                                                     -> Output: The following are the commands that are available to you:
                                 
-                                                                                       move,go
-                                                                                       get,pick
-                                                                                       drop
-                                                                                       ...
-                                                                                       help
-                                                                                       size,height
+                                                                               move,go
+                                                                               get,pick
+                                                                               drop
+                                                                               ...
+                                                                               help
+                                                                               size,height
 
-                                                                                       All commands on the same line act as synonyms and all are are case insensitive.
-    Input #26: look white rabbit's pocket watch (item in inventory)     -> Output #26: A pocket watch that belonged to the White Rabbit.
+                                                                               All commands on the same line act as synonyms and all are are case insensitive.
+    Input: look white rabbit's pocket watch (item in inventory)     -> Output: A pocket watch that belonged to the White Rabbit.
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
@@ -190,19 +191,20 @@ ACTUAL:
 Scenario: The program works handles invalid commands appropriately
 
 EXPECTED:
-    Input #1: move                                                  -> Output #1: You must specify a direction to move. Try 'move <direction>'.
-    Input #2: move w                                                -> Output #2: You cannot go that way.
-    Input #3: go south                                              -> Output #3: You cannot go that way.
-    Input #4: pick wasd                                             -> Output #4: There is no wasd in this room.
-    Input #5: drop wasd                                             -> Output #5: You do not have the wasd in your inventory.
-    Input #6: look eeeeee                                           -> Output #6: You do not have the eeeeee in your inventory.
-    Input #7: ring doorbell                                         -> Output #7: Invalid command.
-    Input #8: use white rabbit's pocket watch (item in inventory)   -> Output #8: You cannot use this item here.
-    Input #9: talk garfield                                         -> Output #9: garfield is not in this room.
-    Input #10: rreeeeee fffffff                                     -> Output #10: Invalid command.
-    Input #11: pick white rabbit's pocket watch (item in inventory) -> Output #11: There is no white rabbit's pocket watch in this room.
-    Input #12:  look (leading whitespace) -> Output #12: Invalid command.
-    Input #13: lvl  (trailing whitespace) -> Output #13: You are level 0
+    Input: move                                                  -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: move w                                                -> Output: You cannot go that way.
+    Input: go south                                              -> Output: You cannot go that way.
+    Input: pick wasd                                             -> Output: There is no wasd in this room.
+    Input: drop wasd                                             -> Output: You do not have the wasd in your inventory.
+    Input: look eeeeee                                           -> Output: You do not have the eeeeee in your inventory.
+    Input: ring doorbell                                         -> Output: Invalid command.
+    Input: use white rabbit's pocket watch (item in inventory)   -> Output: You cannot use this item here.
+    Input: talk garfield                                         -> Output: garfield is not in this room.
+    Input: rreeeeee fffffff                                      -> Output: Invalid command.
+    Input: pick white rabbit's pocket watch (item in inventory)  -> Output: There is no white rabbit's pocket watch in this room.
+    Input:  look (leading whitespace)                            -> Output: Invalid command.
+    Input: lvl  (trailing whitespace)                            -> Output: You are level 0
+    Input: lvl . (trailing period)                               -> Output: You are level 0
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
@@ -215,72 +217,72 @@ Location 3: Room with a table
 Scenario: The program works correctly when the user enters valid input
 
 EXPECTED:
-    Input #1: move east (does not meet room requirements)           -> Output #1: You do not meet the level or size requirements to go that way.
-    Input #2: go e (meet room requirements)                         -> Output #2: You move east to the Sea.
+    Input: move east (does not meet room requirements)          -> Output: You do not meet the level or size requirements to go that way.
+    Input: go e (meet room requirements)                        -> Output: You move east to the Sea.
                                 
-                                                                                  You now are in a tiny row boat, floating in a large sea. You see in the distance
-                                                                                  many animals and birds that have been swept by the waters. After drifting for a while,
-                                                                                  you and the animals find a beach and dock. 
+                                                                           You now are in a tiny row boat, floating in a large sea. You see in the distance
+                                                                           many animals and birds that have been swept by the waters. After drifting for a while,
+                                                                           you and the animals find a beach and dock. 
 
-                                                                                  You and the animals now start questioning yourselves how to dry off, as you do not
-                                                                                  want to catch a cold!                                                                                 
-    Input #3: get blue potion                                       -> Output #3: You picked up the blue potion and place it in your inventory.
-    Input #4: pick red potion                                       -> Output #4: You picked up the red potion and place it in your inventory.
-    Input #5: pick green potion                                     -> Output #5: You picked up the green potion and place it in your inventory.
-    Input #6: drop blue potion (item in inventory)                  -> Output #6: You dropped the blue potion and placed it in the room.
-    Input #7: drop green potion (item not in inventory)             -> Output #7: You do not have the green potion in your inventory.
-    Input #8: inventory (3 potions in inventory)                    -> Output #8: You have the following items in your inventory:
-                                                                                  - red potion
-                                                                                  - green potion
-                                                                                  - blue potion
-    Input #9: use blue potion                                       -> Output #9: You have shrunk in size!
-    Input #10: i (no item in inventory)                             -> Output #10: You have no items in your inventory.
-    Input #11: location                                             -> Output #11: You are at the Room with a table
-    Input #12: where                                                -> Output #12: You are at the Room with a table
-    Input #13: look                                                 -> Output #13: You see a tiny door, through which you assume the rabbit went through. But you 
-                                                                                   cannot believe your eyes, you think you just saw the doorknob on the door move!
-                                                                                   You also see the table you previously saw and on it are several unknown potions.
+                                                                           You an  he animals now start questioning yourselves how to dry off, as you do not
+                                                                           want to catch a cold!                                                                                 
+    Input: get blue potion                                      -> Output: You picked up the blue potion and place it in your inventory.
+    Input: pick red potion                                      -> Output: You picked up the red potion and place it in your inventory.
+    Input: pick green potion                                    -> Output: You picked up the green potion and place it in your inventory.
+    Input: drop blue potion (item in inventory)                 -> Output: You dropped the blue potion and placed it in the room.
+    Input: drop green potion (item not in inventory)            -> Output: You do not have the green potion in your inventory.
+    Input: inventory ( potions in inventory)                    -> Output: You have the following items in your inventory:
+                                                                           - red potion
+                                                                           - green potion
+                                                                           - blue potion
+    Input: use blue potion                                      -> Output: You have shrunk in size!
+    Input: i (no item in inventory)                             -> Output: You have no items in your inventory.
+    Input: location                                             -> Output: You are at the Room with a table
+    Input: where                                                -> Output: You are at the Room with a table
+    Input: look                                                 -> Output: You see a tiny door, through which you assume the rabbit went through. But you 
+                                                                           cannot believe your eyes, you think you just saw the doorknob on the door move!
+                                                                           You also see the table you previously saw and on it are several unknown potions.
 
-                                                                                   Can exit to the 
-                                                                                   EAST, 
+                                                                           Can exit to the 
+                                                                           EAST, 
 
-                                                                                   No items in room, sorry.
+                                                                           No items in room, sorry.
 
-                                                                                   You can talk to doorknob, 
-    Input #14: examine                                              -> Output #14: You see a tiny door, through which you assume the rabbit went through. But you 
-                                                                                   cannot believe your eyes, you think you just saw the doorknob on the door move!
-                                                                                   You also see the table you previously saw and on it are several unknown potions.
+                                                                           You can talk to doorknob, 
+    Input: examine                                              -> Output: You see a tiny door, through which you assume the rabbit went through. But you 
+                                                                           cannot believe your eyes, you think you just saw the doorknob on the door move!
+                                                                           You also see the table you previously saw and on it are several unknown potions.
 
-                                                                                   Can exit to the 
-                                                                                   EAST, 
+                                                                           Can exit to the 
+                                                                           EAST, 
 
-                                                                                    No items in room, sorry.
+                                                                           No items in room, sorry.
 
-                                                                                    You can talk to doorknob, 
-    Input #15: exit                                                 -> Output #15: Sorry to see you go. Goodbye! (Program quits)
-    Input #16: quit                                                 -> Output #16: Sorry to see you go. Goodbye! (Program quits)
-    Input #17: q                                                    -> Output #17: Sorry to see you go. Goodbye! (Program quits)
-    Input #21: level                                                -> Output #21: You are level 0
-    Input #22: lvl                                                  -> Output #22: You are level 0
-    Input #23: size (no potion used)                                -> Output #23: You are normal.
-    Input #24: height                                               -> Output #24: You are normal.
-    Input #25: help                                                 -> Output #25: The following are the commands that are available to you:
+                                                                           You can talk to doorknob, 
+    Input: exit                                                 -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: quit                                                 -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: q                                                    -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: level                                                -> Output: You are level 0
+    Input: lvl                                                  -> Output: You are level 0
+    Input: size (no potion used)                                -> Output: You are normal.
+    Input: height                                               -> Output: You are normal.
+    Input: help                                                 -> Output: The following are the commands that are available to you:
                             
-                                                                                   move,go
-                                                                                   get,pick
-                                                                                   drop
-                                                                                   ...
-                                                                                   help
-                                                                                   size,height
+                                                                           move,go
+                                                                           get,pick
+                                                                           drop
+                                                                           ...
+                                                                           help
+                                                                           size,height
 
-                                                                                   All commands on the same line act as synonyms and all are are case insensitive.
-    Input #26: look red potion (item in inventory)                  -> Output #26: A tiny vial of a liquid that smells like mint.
-    Input #27: size (after using red potion directly)               -> Output #27: You are small.
-    Input #28: size (after using green potion directly)             -> Output #28: You are large.
-    Input #29: size (after using blue potion after green potion)    -> Output #29: You are normal.
-    Input #30: talk doorknob                                        -> Output #30: Hello there! What are you doing here? Never mind that, why is everyone that passes by
-                                                                                   here in such a rush! First that white rabbit and now you! I'm assuming you want to go
-                                                                                   through my door but I won't allow that! Not at your gigantic size! You must shrink in size
+                                                                           All commands on the same line act as synonyms and all are are case insensitive.
+    Input: look red potion (item in inventory)                  -> Output: A tiny vial of a liquid that smells like mint.
+    Input: size (after using red potion directly)               -> Output: You are small.
+    Input: size (after using green potion directly)             -> Output: You are large.
+    Input: size (after using blue potion after green potion)    -> Output: You are normal.
+    Input: talk doorknob                                        -> Output: Hello there! What are you doing here? Never mind that, why is everyone that passes by
+                                                                           here in such a rush! First that white rabbit and now you! I'm assuming you want to go
+                                                                           through my door but I won't allow that! Not at your gigantic size! You must shrink in size
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
@@ -290,19 +292,192 @@ ACTUAL:
 Scenario: The program works handles invalid commands appropriately
 
 EXPECTED:
-    Input #1: move                                      -> Output #1: You must specify a direction to move. Try 'move <direction>'.
-    Input #2: move w                                    -> Output #2: You cannot go that way.
-    Input #3: go south                                  -> Output #3: You cannot go that way.
-    Input #4: pick wasd                                 -> Output #4: There is no wasd in this room.
-    Input #5: drop wasd                                 -> Output #5: You do not have the wasd in your inventory.
-    Input #6: look eeeeee                               -> Output #6: You do not have the eeeeee in your inventory.
-    Input #7: ring doorbell                             -> Output #7: Invalid command.
-    Input #8: use red potion (after using blue potion)  -> Output #8: You are already the smallest size.
-    Input #9: talk garfield                             -> Output #9: garfield is not in this room.
-    Input #10: rreeeeee fffffff                         -> Output #10: Invalid command.
-    Input #11: pick red potion (item in inventory)      -> Output #11: There is no red potion in this room.
-    Input #12:  look (leading whitespace)               -> Output #12: Invalid command.
-    Input #13: lvl  (trailing whitespace)               -> Output #13: You are level 0
+    Input: move                                      -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: move w                                    -> Output: You cannot go that way.
+    Input: go south                                  -> Output: You cannot go that way.
+    Input: pick wasd                                 -> Output: There is no wasd in this room.
+    Input: drop wasd                                 -> Output: You do not have the wasd in your inventory.
+    Input: look eeeeee                               -> Output: You do not have the eeeeee in your inventory.
+    Input: ring doorbell                             -> Output: Invalid command.
+    Input: use red potion (after using blue potion)  -> Output: You are already the smallest size.
+    Input: talk garfield                             -> Output: garfield is not in this room.
+    Input: rreeeeee fffffff                          -> Output: Invalid command.
+    Input: pick red potion (item in inventory)       -> Output: There is no red potion in this room.
+    Input:  look (leading whitespace)                -> Output: Invalid command.
+    Input: lvl  (trailing whitespace)                -> Output: You are level 0
+    Input: lvl . (trailing period)                   -> Output: You are level 0
+
+ACTUAL:
+    Results displayed as expected (confirmed by running the program).
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Location 4: Sea
+
+
+Scenario: The program works correctly when the user enters valid input
+
+EXPECTED:
+    Input: move east                                -> Output: You cannot go that way.
+    Input: go n                                     -> Output: You have entered a safe roof. Use this room to use certain items in order to level up.       
+    Input: go s (does not meet room requirements)   -> Output: You do not meet the level or size requirements to go that way.
+    Input: go west                                  -> Output: You move west to the Forest.
+                                                               You are in the forest and see a large, purple talk laying lazily on a tree branch.
+    Input: go west (after already visiting west)    -> Output: You move west to the Forest.
+                                                               You are back at the forest.                                                          
+    Input: get seashell                             -> Output: You picked up the seashell and place it in your inventory.
+    Input: pick seashell (already in inventory)     -> Output: There is no seashell in this room.
+    Input: drop seashell (item in inventory)        -> Output: You dropped the seashell and placed it in the room.
+    Input: drop seashell (item not in inventory)    -> Output: You do not have the seashell in your inventory.
+    Input: inventory (seashell in inventory)        -> Output: You have the following items in your inventory:
+                                                               - seashell
+    Input: i (no item in inventory)                 -> Output: You have no items in your inventory.
+    Input: use seashell                             -> Output: You cannot use this item here.
+    Input: location                                 -> Output: You are at the Sea
+    Input: where                                    -> Output: You are at the Sea
+    Input: look                                     -> Output: You now are in a tiny row boat, floating in a large sea. You see in the distance
+                                                               many animals and birds that have been swept by the waters. After drifting for a while,
+                                                               you and the animals find a beach and dock. 
+
+                                                               You and the animals now start questioning yourselves how to dry off, as you do not
+                                                               want to catch a cold!
+
+                                                               Can exit to the 
+                                                               NORTH, SOUTH, WEST
+
+                                                               No items in room, sorry.
+
+                                                               There is no one to talk to in this room.
+    Input: examine                                  -> Output: You now are in a tiny row boat, floating in a large sea. You see in the distance
+                                                               many animals and birds that have been swept by the waters. After drifting for a while,
+                                                               you and the animals find a beach and dock. 
+
+                                                               You and the animals now start questioning yourselves how to dry off, as you do not
+                                                               want to catch a cold!
+
+                                                               Can exit to the 
+                                                               NORTH, SOUTH, WEST
+
+                                                               No items in room, sorry.
+
+                                                               There is no one to talk to in this room.
+    Input: exit                                     -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: quit                                     -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: q                                        -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: level                                    -> Output: You are level 0
+    Input: lvl                                      -> Output: You are level 0
+    Input: size                                     -> Output: You are small.
+    Input: height                                   -> Output: You are small.
+    Input: help                                     -> Output: The following are the commands that are available to you:
+                            
+                                                               move,go
+                                                               get,pick
+                                                               drop
+                                                               ...
+                                                               help
+                                                               size,height
+
+                                                               All commands on the same line act as synonyms and all are are case insensitive.
+    Input: look seashell (item in inventory)        -> Output: A mysterious seashell. When held against your ear, you hear the sounds of the sea.
+
+ACTUAL:
+    Results displayed as expected (confirmed by running the program).
+
+----------------------------------------------------------------------------------------
+
+Scenario: The program works handles invalid commands appropriately
+
+EXPECTED:
+    Input: move                              -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: move e                            -> Output: You cannot go that way.
+    Input: pick wasd                         -> Output: There is no wasd in this room.
+    Input: drop wasd                         -> Output: You do not have the wasd in your inventory.
+    Input: look eeeeee                       -> Output: You do not have the eeeeee in your inventory.
+    Input: ring doorbell                     -> Output: Invalid command.
+    Input: use looifds                       -> Output: You do not have the looifds in your inventory.
+    Input: talk garfield                     -> Output: garfield is not in this room.
+    Input: rreeeeee fffffff                  -> Output: Invalid command.
+    Input: pick seashell (item in inventory) -> Output: There is no seashell in this room.
+    Input:  look (leading whitespace)        -> Output: Invalid command.
+    Input: lvl  (trailing whitespace)        -> Output: You are level 0
+    Input: lvl . (trailing period)           -> Output: You are level 0
+
+ACTUAL:
+    Results displayed as expected (confirmed by running the program).
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Location 5: Safe room
+
+
+Scenario: The program works correctly when the user enters valid input
+
+EXPECTED:
+    Input: move north                           -> Output: You cannot go that way.
+    Input: go s                                 -> Output: You move south to the Sea.
+                                                           You are back at the Sea                                                         
+    Input: use seashell                         -> Output: You have used a special item to level up!
+                                                           You are now level 1!
+    Input: inventory (seashell in inventory)    -> Output: You have the following items in your inventory:
+                                                           - seashell
+    Input: i (after using seashell)             -> Output: You have no items in your inventory.
+    Input: location                             -> Output: You are at the Safe room
+    Input: where                                -> Output: You are at the Safe room
+    Input: look                                 -> Output: You have entered a safe roof. Use this room to use certain items in order to level up.
+
+                                                           Can exit to the 
+                                                           SOUTH, 
+
+                                                           No items in room, sorry.
+
+                                                           There is no one to talk to in this room.
+    Input: examine                              -> Output: You have entered a safe roof. Use this room to use certain items in order to level up.
+
+                                                           Can exit to the 
+                                                           SOUTH, 
+
+                                                           No items in room, sorry.
+
+                                                           There is no one to talk to in this room.
+    Input: exit                                 -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: quit                                 -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: q                                    -> Output: Sorry to see you go. Goodbye! (Program quits)
+    Input: level (before using seashell)        -> Output: You are level 0
+    Input: lvl   (after using seashell)         -> Output: You are level 1
+    Input: size                                 -> Output: You are small.
+    Input: height                               -> Output: You are small.
+    Input: help                                 -> Output: The following are the commands that are available to you:
+                            
+                                                           move,go
+                                                           get,pick
+                                                           drop
+                                                           ...
+                                                           help
+                                                           size,height
+
+                                                           All commands on the same line act as synonyms and all are are case insensitive.
+
+ACTUAL:
+    Results displayed as expected (confirmed by running the program).
+
+----------------------------------------------------------------------------------------
+
+Scenario: The program works handles invalid commands appropriately
+
+EXPECTED:
+    Input: move                              -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: move w                            -> Output: You cannot go that way.
+    Input: pick wasd                         -> Output: There is no wasd in this room.
+    Input: drop wasd                         -> Output: You do not have the wasd in your inventory.
+    Input: look eeeeee                       -> Output: You do not have the eeeeee in your inventory.
+    Input: ring doorbell                     -> Output: Invalid command.
+    Input: use looifds                       -> Output: You do not have the looifds in your inventory.
+    Input: talk garfield                     -> Output: garfield is not in this room.
+    Input: rreeeeee fffffff                  -> Output: Invalid command.
+    Input: use seashell (already used)       -> Output: There is no seashell in this room.
+    Input:  look (leading whitespace)        -> Output: Invalid command.
+    Input: lvl  (trailing whitespace)        -> Output: You are level 0
+    Input: lvl . (trailing period)           -> Output: You are level 0
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
