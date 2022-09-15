@@ -568,7 +568,7 @@ public class Game {
                             game.player.drop(game.rooms, item.trim());
 
                         } else {
-                            System.out.println("\nYou must specify an item to get. Try 'get <item name>'.");
+                            System.out.println("\nYou must specify an item to drop. Try 'drop <item name>'.");
                         }
                         break;
 

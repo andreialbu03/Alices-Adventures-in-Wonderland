@@ -100,6 +100,10 @@ EXPECTED:
     Input:  look (leading whitespace)                    -> Output: Invalid command.
     Input: lvl  (trailing whitespace)                    -> Output: You are level 0
     Input: lvl . (trailing period)                       -> Output: You are level 0
+    Input: get (no item entered)                         -> Output: You must specify an item to get. Try 'get <item name>'.
+    Input: talk (no character entered)                   -> Output: You must specify a character to talk to. Try 'talk <character name>'.
+    Input: move (no direction entered)                   -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: drop (no item entered)                        -> Output: You must specify an item to drop. Try 'drop <item name>'.
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
@@ -205,6 +209,10 @@ EXPECTED:
     Input:  look (leading whitespace)                            -> Output: Invalid command.
     Input: lvl  (trailing whitespace)                            -> Output: You are level 0
     Input: lvl . (trailing period)                               -> Output: You are level 0
+    Input: get (no item entered)                         -> Output: You must specify an item to get. Try 'get <item name>'.
+    Input: talk (no character entered)                   -> Output: You must specify a character to talk to. Try 'talk <character name>'.
+    Input: move (no direction entered)                   -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: drop (no item entered)                        -> Output: You must specify an item to drop. Try 'drop <item name>'.
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
@@ -306,6 +314,10 @@ EXPECTED:
     Input:  look (leading whitespace)                -> Output: Invalid command.
     Input: lvl  (trailing whitespace)                -> Output: You are level 0
     Input: lvl . (trailing period)                   -> Output: You are level 0
+    Input: get (no item entered)                         -> Output: You must specify an item to get. Try 'get <item name>'.
+    Input: talk (no character entered)                   -> Output: You must specify a character to talk to. Try 'talk <character name>'.
+    Input: move (no direction entered)                   -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: drop (no item entered)                        -> Output: You must specify an item to drop. Try 'drop <item name>'.
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
@@ -402,6 +414,10 @@ EXPECTED:
     Input:  look (leading whitespace)        -> Output: Invalid command.
     Input: lvl  (trailing whitespace)        -> Output: You are level 0
     Input: lvl . (trailing period)           -> Output: You are level 0
+    Input: get (no item entered)                         -> Output: You must specify an item to get. Try 'get <item name>'.
+    Input: talk (no character entered)                   -> Output: You must specify a character to talk to. Try 'talk <character name>'.
+    Input: move (no direction entered)                   -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: drop (no item entered)                        -> Output: You must specify an item to drop. Try 'drop <item name>'.
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
@@ -480,6 +496,10 @@ EXPECTED:
     Input: lvl  (trailing whitespace)        -> Output: You are level 0
     Input: lvl . (trailing period)           -> Output: You are level 0
     Input: uSe sEaShElL                      -> Output: As expected above (case insensitive)
+    Input: get (no item entered)                         -> Output: You must specify an item to get. Try 'get <item name>'.
+    Input: talk (no character entered)                   -> Output: You must specify a character to talk to. Try 'talk <character name>'.
+    Input: move (no direction entered)                   -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: drop (no item entered)                        -> Output: You must specify an item to drop. Try 'drop <item name>'.
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
@@ -570,6 +590,10 @@ EXPECTED:
     Input: lvl  (trailing whitespace)        -> Output: You are level 0
     Input: lvl . (trailing period)           -> Output: You are level 0
     Input: talk ChEShIrE cAt                 -> As expected above (case insensitive)
+    Input: get (no item entered)                         -> Output: You must specify an item to get. Try 'get <item name>'.
+    Input: talk (no character entered)                   -> Output: You must specify a character to talk to. Try 'talk <character name>'.
+    Input: move (no direction entered)                   -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: drop (no item entered)                        -> Output: You must specify an item to drop. Try 'drop <item name>'.
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
@@ -667,6 +691,10 @@ EXPECTED:
     Input: lvl  (trailing whitespace)              -> Output: You are level 2
     Input: lvl . (trailing period)                 -> Output: You are level 2
     Input: tAlK mArcH HaRe                         -> As expected above (case insensitive)
+    Input: get (no item entered)                         -> Output: You must specify an item to get. Try 'get <item name>'.
+    Input: talk (no character entered)                   -> Output: You must specify a character to talk to. Try 'talk <character name>'.
+    Input: move (no direction entered)                   -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: drop (no item entered)                        -> Output: You must specify an item to drop. Try 'drop <item name>'.
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
@@ -760,6 +788,10 @@ EXPECTED:
     Input: lvl  (trailing whitespace)                   -> Output: You are level 2
     Input: lvl . (trailing period)                      -> Output: You are level 2
     Input: tAlK QuEEn oF HeArtS                         -> As expected above (case insensitive)
+    Input: get (no item entered)                         -> Output: You must specify an item to get. Try 'get <item name>'.
+    Input: talk (no character entered)                   -> Output: You must specify a character to talk to. Try 'talk <character name>'.
+    Input: move (no direction entered)                   -> Output: You must specify a direction to move. Try 'move <direction>'.
+    Input: drop (no item entered)                        -> Output: You must specify an item to drop. Try 'drop <item name>'.
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
