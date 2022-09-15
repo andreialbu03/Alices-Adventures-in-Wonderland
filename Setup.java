@@ -256,7 +256,7 @@ public class Setup {
                 help = help + line + '\n';
                 line = br.readLine();
             }
-            help = help + "\nAll commands on the same line act as synonyms and all are are case insensitive.\n";
+            help = help + "\nAll commands on the same line act as synonyms and all are case insensitive.\n";
 
             // Return the help menu
             return help;

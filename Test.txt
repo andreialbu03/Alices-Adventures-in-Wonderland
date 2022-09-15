@@ -61,7 +61,7 @@ EXPECTED:
     Input: talk dinah                                           -> Output: Dinah: Meow meow puurrrr
     Input: speak white rabbit                                   -> Output: I'm late, I'm late, I'm late! I can't be late, must hurry, hurry, hurry!
     Input: talk sister                                          -> Output: Alice, why aren't you paying attention to the book? You know that you will have to
-                                                                           start reading book without pictures! And this is an important history lesson, so pay
+                                                                           start reading the book without pictures! And this is an important history lesson, so pay
                                                                            attention.
     Input: level                                                -> Output: You are level 0 
     Input: lvl                                                  -> Output: You are level 0
@@ -76,7 +76,7 @@ EXPECTED:
                                                                            help
                                                                            size,height
 
-                                                                           All commands on the same line act as synonyms and all are are case insensitive.
+                                                                           All commands on the same line act as synonyms and all are case insensitive.
     Input: look sister's history book (item in inventory)       -> Output: A history book that belonged to your sister. It's a bit worn, but you can still read it.
 
 ACTUAL:
@@ -180,7 +180,7 @@ EXPECTED:
                                                                                help
                                                                                size,height
 
-                                                                               All commands on the same line act as synonyms and all are are case insensitive.
+                                                                               All commands on the same line act as synonyms and all are case insensitive.
     Input: look white rabbit's pocket watch (item in inventory)     -> Output: A pocket watch that belonged to the White Rabbit.
 
 ACTUAL:
@@ -275,7 +275,7 @@ EXPECTED:
                                                                            help
                                                                            size,height
 
-                                                                           All commands on the same line act as synonyms and all are are case insensitive.
+                                                                           All commands on the same line act as synonyms and all are case insensitive.
     Input: look red potion (item in inventory)                  -> Output: A tiny vial of a liquid that smells like mint.
     Input: size (after using red potion directly)               -> Output: You are small.
     Input: size (after using green potion directly)             -> Output: You are large.
@@ -378,7 +378,7 @@ EXPECTED:
                                                                help
                                                                size,height
 
-                                                               All commands on the same line act as synonyms and all are are case insensitive.
+                                                               All commands on the same line act as synonyms and all are case insensitive.
     Input: look seashell (item in inventory)        -> Output: A mysterious seashell. When held against your ear, you hear the sounds of the sea.
 
 ACTUAL:
@@ -456,7 +456,7 @@ EXPECTED:
                                                            help
                                                            size,height
 
-                                                           All commands on the same line act as synonyms and all are are case insensitive.
+                                                           All commands on the same line act as synonyms and all are case insensitive.
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).
@@ -539,7 +539,7 @@ EXPECTED:
                                                                help
                                                                size,height
 
-                                                               All commands on the same line act as synonyms and all are are case insensitive.
+                                                               All commands on the same line act as synonyms and all are case insensitive.
     Input: speak cheshire cat                       -> Output: Imagination is the only weapon in the war with reality! We’re all mad here. I’m mad.
                                                                You’re mad. You might think I am crazy but I am not crazy; my reality is just different
                                                                from yours.
@@ -634,7 +634,7 @@ EXPECTED:
                                                                    help
                                                                    size,height
 
-                                                                   All commands on the same line act as synonyms and all are are case insensitive.
+                                                                   All commands on the same line act as synonyms and all are case insensitive.
     Input: speak mad hatter                             -> Output: Hello there! what a small world it is! I'm the Mad Hatter, and this is my birthday tea
                                                                    party. I'm so glad you could join us! I'm sure you'll have a wonderful time!
 
@@ -734,7 +734,7 @@ EXPECTED:
                                                                                help
                                                                                size,height
 
-                                                                               All commands on the same line act as synonyms and all are are case insensitive.
+                                                                               All commands on the same line act as synonyms and all are case insensitive.
 
 ACTUAL:
     Results displayed as expected (confirmed by running the program).

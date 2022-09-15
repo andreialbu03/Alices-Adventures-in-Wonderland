@@ -5,7 +5,7 @@ END
 Sister
 Open field
 Alice, why aren't you paying attention to the book? You know that you will have to
-start reading book without pictures! And this is an important history lesson, so pay
+start reading the book without pictures! And this is an important history lesson, so pay
 attention.
 END
 White rabbit
