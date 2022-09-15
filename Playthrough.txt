@@ -1,0 +1,517 @@
+Welcome to Alice's Adventures in Wonderland! This is a roleplaying
+game based on the book by Lewis Carroll.  
+
+The game is set in Wonderland, a strange and magical place where
+anything can happen. You will be able to explore the world of 
+Wonderland and meet many strange and wonderful characters. You will
+also be able to interact with various items and objects in the game.
+
+You will be playing Alice, a small and curious child in the Victorian
+era. Your goal is to find your way through Wonderland to the Queen of
+Hearts' palace. There, you will have to talk to her and take her staff
+and necklace. Once you have done this, you will beat the game!
+
+To play the game, type in a command and press enter.
+You can type in commands in lower or upper case, it doesn't matter.
+Many commands have synonyms, so you can type in a command in a
+variety of ways. For example, you can type in "go north" or "go n".
+
+Use the "examine" or "look" command to see what options are available to
+you in a room. These can also be used on items.
+
+You can type in "help" to get a list of all the commands.
+
+You are sitting on a tree branch in an open field, listening to you sister
+read a history book. You are very bored, when you suddenly notice a talking
+white rabbit with a pocket watch currying along the river bank. He quickly
+goes down a dark rabbit hole.
+
+help
+
+The following are the commands that are available to you:
+
+move,go
+get,pick
+drop
+inventory,i
+location,where
+look,examine
+exit,quit,q
+north,n
+south,s
+east,e
+west,w
+talk,speak
+use
+level,lvl
+help
+size,height
+
+All commands on the same line act as synonyms and all are case insensitive.
+
+look
+
+You are sitting on a tree branch in an open field, listening to you sister
+read a history book. You are very bored, when you suddenly notice a talking
+white rabbit with a pocket watch currying along the river bank. He quickly
+goes down a dark rabbit hole.
+
+Can go to the 
+NORTH, 
+
+sister's history book, is in the room.
+
+You can talk to dinah, white rabbit, sister, 
+talk dinah
+
+Meow meow puurrrr
+talk white rabbit
+
+I'm late, I'm late, I'm late! I can't be late, must hurry, hurry, hurry!
+pick sister's history book
+
+You picked up the sister's history book and place it in your inventory.
+i
+
+You have the following items in your inventory:
+- sister's history book
+drop sister's history book
+
+You dropped the sister's history book and placed it in the room.
+i
+
+You have no items in your inventory.
+pick sister's history book
+
+You picked up the sister's history book and place it in your inventory.
+use sister's history book
+
+You cannot use this item here.
+talk sister
+
+Alice, why aren't you paying attention to the book? You know that you will have to
+start reading the book without pictures! And this is an important history lesson, so pay
+attention.
+go s
+
+You cannot go that way.
+go north
+
+You move north to the Rabbit hole.
+
+You follow the White Rabbit through the rabbit hole. Inside, its very tight and
+dark. Suddenly, you fall down a hole you didn't see. While falling, you see many
+strange objects such as a grandfather clock, mirrors, and beds. You cleverly use
+your dress to parachute down and finally land in a room with checkered flooring.
+
+You see the white rabbit go through a door, possibly leading to a new room. You
+think you saw a table while the door was ajar, but you also hit your head while
+falling.
+
+look
+
+You follow the White Rabbit through the rabbit hole. Inside, its very tight and
+dark. Suddenly, you fall down a hole you didn't see. While falling, you see many
+strange objects such as a grandfather clock, mirrors, and beds. You cleverly use
+your dress to parachute down and finally land in a room with checkered flooring.
+
+You see the white rabbit go through a door, possibly leading to a new room. You
+think you saw a table while the door was ajar, but you also hit your head while
+falling.
+
+Can go to the 
+NORTH, 
+
+white rabbit's pocket watch, is in the room.
+
+There is no one to talk to in this room.
+pick white rabbit's pocket watch
+
+You picked up the white rabbit's pocket watch and place it in your inventory.
+i
+
+You have the following items in your inventory:
+- sister's history book
+- white rabbit's pocket watch
+go north
+
+You move north to the Room with a table.
+
+You see a tiny door, through which you assume the rabbit went through. But you 
+cannot believe your eyes, you think you just saw the doorknob on the door move!
+You also see the table you previously saw and on it are several unknown potions.
+
+look
+
+You see a tiny door, through which you assume the rabbit went through. But you 
+cannot believe your eyes, you think you just saw the doorknob on the door move!
+You also see the table you previously saw and on it are several unknown potions.
+
+Can go to the 
+EAST, 
+
+red potion, green potion, blue potion, are in the room.
+
+You can talk to doorknob, 
+size
+
+You are normal.
+go e
+
+You do not meet the level or size requirements to go that way.
+pick green potion
+
+You picked up the green potion and place it in your inventory.
+use green potion
+
+You have grown in size!
+size
+
+You are large.
+go e
+
+You do not meet the level or size requirements to go that way.
+look
+
+You see a tiny door, through which you assume the rabbit went through. But you 
+cannot believe your eyes, you think you just saw the doorknob on the door move!
+You also see the table you previously saw and on it are several unknown potions.
+
+Can go to the 
+EAST, 
+
+red potion, blue potion, are in the room.
+
+You can talk to doorknob, 
+pick blue potion
+
+You picked up the blue potion and place it in your inventory.
+pick red potion
+
+You picked up the red potion and place it in your inventory.
+i
+
+You have the following items in your inventory:
+- red potion
+- sister's history book
+- white rabbit's pocket watch
+- blue potion
+use red potion
+
+You have shrunk in size!
+size
+
+You are normal.
+go e
+
+You do not meet the level or size requirements to go that way.
+use blue potion
+
+You have shrunk in size!
+size
+
+You are small.
+go e
+
+You move east to the Sea.
+
+You now are in a tiny row boat, floating in a large sea. You see in the distance
+many animals and birds that have been swept by the waters. After drifting for a while,
+you and the animals find a beach and dock. 
+
+You and the animals now start questioning yourselves how to dry off, as you do not
+want to catch a cold!
+
+look
+
+You now are in a tiny row boat, floating in a large sea. You see in the distance
+many animals and birds that have been swept by the waters. After drifting for a while,
+you and the animals find a beach and dock. 
+
+You and the animals now start questioning yourselves how to dry off, as you do not
+want to catch a cold!
+
+Can go to the 
+NORTH, SOUTH, EAST, 
+
+seashell, is in the room.
+
+There is no one to talk to in this room.
+pick seashell
+
+You picked up the seashell and place it in your inventory.
+go s
+
+You do not meet the level or size requirements to go that way.
+go e
+
+You move east to the Forest.
+
+You are in the forest and see a large, purple cat laying lazily on a tree branch.
+
+look
+
+You are in the forest and see a large, purple cat laying lazily on a tree branch.
+
+Can go to the 
+SOUTH, WEST
+
+cat fur, red mushroom, are in the room.
+
+You can talk to cheshire cat, 
+talk cheshire cat
+
+Imagination is the only weapon in the war with reality! We're all mad here. I'm mad.
+You're mad. You might think I am crazy but I am not crazy; my reality is just different
+from yours.
+
+If you haven't seen them yet, the Mad Hatter and the March Hare are having a tea party!
+Visit either you like: they're both mad.
+pick red mushroom
+
+You picked up the red mushroom and place it in your inventory.
+i
+
+You have the following items in your inventory:
+- sister's history book
+- white rabbit's pocket watch
+- seashell
+- red mushroom
+go s
+
+You do not meet the level or size requirements to go that way.
+go e
+
+You cannot go that way.
+look
+
+You are in the forest and see a large, purple cat laying lazily on a tree branch.
+
+Can go to the 
+SOUTH, WEST
+
+cat fur, is in the room.
+
+You can talk to cheshire cat, 
+go w
+
+You move west to the Sea.
+You are back at the Sea
+look
+
+You now are in a tiny row boat, floating in a large sea. You see in the distance
+many animals and birds that have been swept by the waters. After drifting for a while,
+you and the animals find a beach and dock. 
+
+You and the animals now start questioning yourselves how to dry off, as you do not
+want to catch a cold!
+
+Can go to the 
+NORTH, SOUTH, EAST, 
+
+No items in room, sorry.
+
+There is no one to talk to in this room.
+go n
+
+You move north to the Safe room.
+
+You have entered a safe roof. Use this room to use certain items in order to level up.
+
+use seashell
+
+You have used a special item to level up!
+You are now level 1!
+use red mushroom
+
+You have eaten the mushroom and have leveled up!
+You are now level 2!
+use history book
+
+You do not have the history book in your inventory.
+i
+
+You have the following items in your inventory:
+- sister's history book
+- white rabbit's pocket watch
+use sister's history book
+
+You have read the book and gained new knowledge. You have leveled up!
+You are now level 3!
+lvl
+
+You are level 3
+go s
+
+You move south to the Sea.
+You are back at the Sea
+look
+
+You now are in a tiny row boat, floating in a large sea. You see in the distance
+many animals and birds that have been swept by the waters. After drifting for a while,
+you and the animals find a beach and dock. 
+
+You and the animals now start questioning yourselves how to dry off, as you do not
+want to catch a cold!
+
+Can go to the 
+NORTH, SOUTH, EAST, 
+
+No items in room, sorry.
+
+There is no one to talk to in this room.
+go s
+
+You move south to the Tea Party.
+
+You are at a tea party. You see the Mad Hatter, the March Hare.
+
+look
+
+You are at a tea party. You see the Mad Hatter, the March Hare.
+
+Can go to the 
+NORTH, SOUTH, 
+
+mad hatter's hat, teacup, march hare's bow tie, mad hatter's bandolier, are in the room.
+
+You can talk to mad hatter, march hare, 
+talk mad hatter
+
+Hello there! what a small world it is! I'm the Mad Hatter, and this is my birthday tea
+party. I'm so glad you could join us! I'm sure you'll have a wonderful time!
+
+Actually when I think about it, this is an unbirthday party!
+talk march hare
+
+Hello dear! Have some wine! You say you don't see any wine? That's because there is no
+wine at the table! You see, we're having an unbirthday party! It's a very special day
+for us, because it's the day we celebrate our unbirthday!
+pick mad hatter's hat
+
+You picked up the mad hatter's hat and place it in your inventory.
+pick teacup
+
+You picked up the teacup and place it in your inventory.
+pick march hare's bow tie
+
+You picked up the march hare's bow tie and place it in your inventory.
+pick mad hatter's bandolier
+
+You picked up the mad hatter's bandolier and place it in your inventory.
+i
+
+You have the following items in your inventory:
+- mad hatter's hat
+- teacup
+- white rabbit's pocket watch
+- march hare's bow tie
+- mad hatter's bandolier
+look
+
+You are at a tea party. You see the Mad Hatter, the March Hare.
+
+Can go to the 
+NORTH, SOUTH, 
+
+No items in room, sorry.
+
+You can talk to mad hatter, march hare, 
+go n 
+
+You move north to the Sea.
+You are back at the Sea
+go n
+
+You move north to the Safe room.
+You are back at the Safe room
+level         
+
+You are level 3
+use mad hatter's hat
+
+You have put on the Mad Hatter's Hat and look very stylish. You have leveled up!
+You are now level 4!
+use teacup
+
+You drink from the tea cup and feel yourself becoming energized. You have leveled up!
+You are now level 5!
+use white rabbit
+
+You do not have the white rabbit in your inventory.
+use white rabbit's pocket watch
+
+This item cannot be used.
+use march hare's bow tiw
+
+You do not have the march hare's bow tiw in your inventory.
+use march hare's bow tie
+
+You have put on the March Hare's Bow Tie and look very nicely dressed. You have leveled up!
+You are now level 6!
+use mad hatter's bandolier
+
+You have put on the Mad Hatter's Bandolier and love they many different colours it has. You have leveled up!
+You are now level 7!
+i
+
+You have the following items in your inventory:
+- white rabbit's pocket watch
+go s
+
+You move south to the Sea.
+You are back at the Sea
+go s
+
+You move south to the Tea Party.
+You are back at the Tea Party
+go s
+
+You move south to the Queen's Palace.
+
+You are in the Queen's Palace. You see the Queen of Hearts.
+
+look
+
+You are in the Queen's Palace. You see the Queen of Hearts.
+
+Can go to the 
+NORTH, 
+
+No items in room, sorry.
+
+You can talk to queen of hearts, 
+talk queen of heart
+
+queen of heart is not in this room.
+talk queen of hearts
+
+How dare you come to my royal palace! I am the Queen of Hearts, and I will not
+tolerate any nonsense! I will have your head for this!
+
+Noooo! You can't cut off my head! I'm not a head! I'm the Queen of Hearts!
+look
+
+You are in the Queen's Palace. You see the Queen of Hearts.
+
+Can go to the 
+NORTH, 
+
+queen's staff, queen's pearl necklace, are in the room.
+
+There is no one to talk to in this room.
+pick queen's staff
+
+You picked up the queen's staff and place it in your inventory.
+i   
+
+You have the following items in your inventory:
+- queen's staff
+- white rabbit's pocket watch
+pick queen's pearl necklace
+
+You picked up the queen's pearl necklace and place it in your inventory.
+
+You have beat the game and won! 
+
+Congratulations!
