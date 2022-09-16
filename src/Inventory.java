@@ -1,7 +1,7 @@
 /**
  * title: Inventory.java
  * description: Class representing the inventory of the player
- * date: Sep 10, 2022
+ * date: Sep 16, 2022
  * @author Andrei Albu
  * @version 1.0
  * @copyright 2022 Andrei Albu

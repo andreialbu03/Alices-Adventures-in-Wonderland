@@ -1,7 +1,7 @@
 /**
  * title: Character.java
  * description: Class that represents a non-playable character (NPC) in the game
- * date: Sep 10, 2022
+ * date: Sep 16, 2022
  * @author Andrei Albu
  * @version 1.0
  * @copyright 2022 Andrei Albu
