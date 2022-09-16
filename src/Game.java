@@ -22,11 +22,12 @@
  * 
  * Purpose and Description
  * 
- * This program is a text-based adventure game based on the novel Alice's Adventures in Wonderland by Lewis Carroll. 
+ * This program is a text-based adventure game based on the novel Alice's Adventures in Wonderland
+ * by Lewis Carroll. 
  * 
- * This program is a fun game that allows the user to explore the world of Wonderland and interact with the characters
- * and items in the game. The user can play the game by typing in commands and the program will respond accordingly once
- * the ENTER key is pressed.
+ * This program is a fun game that allows the user to explore the world of Wonderland and interact
+ * with the characters and items in the game. The user can play the game by typing in commands and
+ * the program will respond accordingly once the ENTER key is pressed.
  * 
  * Compiling and running instructions
  * Compile: javac Game.java
@@ -56,13 +57,13 @@
  * private String[] actions
  * A String array that holds all of the action words
  * 
- * ---------------------------------------------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------------------------
  * 
  * Class:
  * 
  * public class Character
- * This class represents a non-playable character (NPC) in the game. These are the characters that are spawned in the game
- * and that the user can interact with.
+ * This class represents a non-playable character (NPC) in the game. These are the characters that
+ * are spawned in the game and that the user can interact with.
  * 
  * Constructor:
  * 
@@ -83,15 +84,15 @@
  * A String that stores the text the character displays when the user talks to them
  * 
  * private String location
- * A String that stores the name of the location where the NPC is located in the game
+ * A String that stores the name of the location where the character is located in the game
  * 
- * ---------------------------------------------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------------------------
  * 
  * Class:
  * 
  * public class Control
- * This class is responsible for validating the actions (or commands) the user enters. It works alongside the
- * Actions.java class to accomplish this.
+ * This class is responsible for validating the actions (or commands) the user enters. It works
+ * alongside the Actions.java class to accomplish this.
  * 
  * Constructor:
  * None
@@ -99,26 +100,27 @@
  * Methods:
  * 
  * public static String checkInput(String command, HashMap<String, Actions> validActions)
- * A static method that accepts the action (or command) entered by the user and a HashMap that contains the main action
- * words and the Actions object as key-value pairs. It validates the action entered by the user against all the possible
- * action words stored in the HashMap using nested for loops.
+ * A static method that accepts the action (or command) entered by the user and a HashMap that
+ * contains the main action words and the Actions object as key-value pairs. It validates the action
+ * entered by the user against all the possible action words stored in the HashMap using nested for
+ * loops.
  * 
  * Instance Variables:
  * None
  * 
- * ---------------------------------------------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------------------------
  * 
  * Class:
  * 
  * public class Game
- * This class is the highest level class of the game. It is responsible for the flow of the game and for which events
- * happen in response to the user input.
+ * This class is the highest level class of the game. It is responsible for the flow of the game
+ * and for which events happen in response to the user input.
  * 
  * Constructor:
  * 
  * public Game()
- * Initializes all the instance variables with the help of the Setup class. It also removes the Queen of Hearts’ items
- * from the location they spawn in.
+ * Initializes all the instance variables with the help of the Setup class. It also removes the
+ * Queen of Hearts’ items from the location they spawn in.
  * 
  * Methods:
  * 
@@ -131,25 +133,26 @@
  * A Player object that represents the user in the game
  * 
  * private HashMap<String, Item> items
- * A HashMap object that stores the name of the item and an Item object representing the object as key-value pairs
+ * A HashMap object that stores the name of the item and an Item object representing the object as
+ * key-value pairs
  * 
  * private HashMap<String, Character> NPCs
- * A HashMap object that stores the name of the non-playable character and a Character object representing the character
- * as key-value pairs
+ * A HashMap object that stores the name of the non-playable character and a Character object
+ * representing the character as key-value pairs
  * 
  * private HashMap<String, Location> rooms
- * A HashMap object that stores the name of the location and a Location object representing the location as key-value
- * pairs
+ * A HashMap object that stores the name of the location and a Location object representing the
+ * location as key-value pairs
  * 
  * private HashMap<String, Actions> actions
- * A HashMap object that stores the main action word and an Action object representing the possible aliases as key-value
- * pairs
+ * A HashMap object that stores the main action word and an Action object representing the possible
+ * aliases as key-value pairs
  * 
  * private HashMap<String, Item> queenItems
- * A HashMap object that stores the name of the Queen’s item and an Item object representing the object as key-value
- * pairs
+ * A HashMap object that stores the name of the Queen’s item and an Item object representing the
+ * object as key-value pairs
  * 
- * ---------------------------------------------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------------------------
  * 
  * Class:
  * 
@@ -159,7 +162,7 @@
  * Constructor:
  * 
  * public Inventory()
- * Initializes the instance variable with an empty object
+ * Initializes the instance variable with an empty object of type HashMap
  * 
  * Methods:
  * 
@@ -184,9 +187,10 @@
  * Instance Variables:
  * 
  * private Map<String, Item> inventory
- * An object that stores the name of the item and an Item object representing the object as key-value pairs
+ * An object that stores the name of the item and an Item object representing the object as
+ * key-value pairs
  * 
- * ---------------------------------------------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------------------------
  * 
  * Class:
  * 
@@ -221,12 +225,13 @@
  * A String that stores the name of the location where the item is located in the game
  * 
  * private String action
- * A String that stores the action that the item has on the player when used (ex. level up, shrink, grow)
+ * A String that stores the action that the item has on the player when used (ex. level up,
+ * shrink, grow)
  * 
  * private String effect
  * A String that describes what happens to Alice when the item is used
  * 
- * ---------------------------------------------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------------------------
  * 
  * Class:
  * 
@@ -237,22 +242,24 @@
  * 
  * Location(String name, String description, String[] neighbours, HashMap<String, Item> items,
  *  		HashMap<String, Character> NPCs, String[] restrictions)
- * Initializes the instance variables to the parameters it receives. For the items and NPCs instance variables, the
- * constructor uses helper methods to initialize them (populateItems() and populateNPCs()).
+ * Initializes the instance variables to the parameters it receives. For the items and NPCs
+ * instance variables, the constructor uses helper methods to initialize them (populateItems()
+ * and populateNPCs()).
  * 
  * Methods:
  * 
  * private void populateItems(HashMap<String, Item> items)
- * Iterates over the HashMap containing all of the items in the game and if the item’s location matches the current
- * location, it adds the item to the location
+ * Iterates over the HashMap containing all of the items in the game and if the item’s location
+ * matches the current location, it adds the item to the location
  * 
  * private void populateNPCs(HashMap<String, Character> NPCs)
- * Iterates over the HashMap containing all of the non-playable characters in the game and if the character’s location
- * matches the current location, it adds them to the location
+ * Iterates over the HashMap containing all of the non-playable characters in the game and if
+ * the character’s location matches the current location, it adds the character to the location
  * 
  * public void look()
- * This method is called when the player uses the look command. It displays the information associated with the location,
- * such as the location’s description, its neighbouring locations and the items and NPCs that exist in the location.
+ * This method is called when the player uses the look command. It displays the information
+ * associated with the location, such as the location’s description, its neighbouring locations
+ * and the items and NPCs that exist in the location.
  * 
  * public String[] getNeighbours()
  * Getter method that returns the neighbours instance variable
@@ -281,38 +288,44 @@
  * A String that stores the name of the location
  * 
  * private String[] neighbours
- * An array of String objects that stores all the neighbouring rooms that can be accessed from the current room
+ * An array of String objects that stores all the neighbouring rooms that can be accessed from
+ * the current room
  * 
  * private String description
  * A String that stores the description of the location
  * 
  * private String[] restrictions
- * An array of String objects that stores the restrictions that the player has to meet in order to access the room
+ * An array of String objects that stores the restrictions the player has to meet in order to
+ * access the room
  * 
  * private HashMap<String, Item> items
- * A HashMap object that stores the item name and an Item object representing the item as key-value pairs
- * 
- * private HashMap<String, Character> NPCs
- * A HashMap object that stores the non-playable character’s name and a Character object representing the character as
+ * A HashMap object that stores the item name and an Item object representing the item as
  * key-value pairs
  * 
- * ---------------------------------------------------------------------------------------------------------------------
+ * private HashMap<String, Character> NPCs
+ * A HashMap object that stores the non-playable character’s name and a Character object
+ * representing the character as key-value pairs
+ * 
+ * ------------------------------------------------------------------------------------------------
  * 
  * Class:
  * 
  * public class Player
- * This class represents Alice in the game. This is also the main character that is played by the user.
+ * This class represents Alice in the game. This is also the main character that is played by
+ * the user.
  * 
  * Constructor:
  * 
  * Player(String startingLocation)
- * A constructor that initializes the instance variable to default values. It initializes the location instance variable
- * to the parameter it receives and also adds it to the visitedRooms instance variable.
+ * A constructor that initializes the instance variables to default values. It also initializes
+ * the location instance variable to the parameter it receives and also adds it to the visitedRooms
+ * instance variable.
  * 
  * Methods:
  * 
  * public void move(HashMap<String, Location> rooms, String direction)
- * Moves the player to a new location if the direction is valid and if the player meets the new location’s requirements
+ * Moves the player to a new location if the direction is valid and if the player meets the new
+ * location’s requirements
  * 
  * public void add(HashMap<String, Location> rooms, String item)
  * Adds an item to the players inventory if it exists in the location
@@ -329,7 +342,8 @@
  * public void look(HashMap<String, Location> rooms)
  * Used when the player wants to look at the room. Calls the current room’s look method
  * 
- * public void talkTo(HashMap<String, Location> rooms, String npc, HashMap<String, Item> queenItems)
+ * public void talkTo(HashMap<String, Location> rooms, String npc, HashMap<String,
+ *                    Item> queenItems)
  * Outputs the non-playable character’s dialogue if they exist in the room
  * 
  * public void use(String item)
@@ -342,10 +356,11 @@
  * Grows the player up a size
  * 
  * private boolean isValidLocation(Location nextRoom)
- * Helper method that checks if the player can move to an adjacent location. It does this by ensuring the player meets
- * the location’s restrictions
+ * Helper method that checks if the player can move to an adjacent location. It does this by
+ * ensuring the player meets the location’s restrictions
  * 
- * private void addQueenItemsToRoom(HashMap<String, Location> rooms, HashMap<String, Item> items)
+ * private void addQueenItemsToRoom(HashMap<String, Location> rooms,
+ *                                  HashMap<String, Item> items)
  * Adds the Queen’s items to the room and also removes the Queen from the room
  * 
  * public boolean hasWon()
@@ -365,7 +380,23 @@
  * 
  * Instance Variables:
  * 
- * ---------------------------------------------------------------------------------------------------------------------
+ * private static String location
+ * A String that stores the name of the location where the player is currently located
+ * 
+ * private static Inventory inventory
+ * An Inventory object that stores the items the player has in their inventory
+ * 
+ * private static String size
+ * A String that stores the size of the player
+ * 
+ * private static int level
+ * An integer that stores the level of the player
+ * 
+ * private static HashMap<String, String> visitedRooms
+ * A HashMap object that stores the name of the location and a String representing the that holds
+ * the text to display when the player enters the room for the second time
+ * 
+ * ------------------------------------------------------------------------------------------------
  * 
  * Class:
  * 
@@ -411,14 +442,16 @@
  * For this program to be successful, it must be able to:
  *      - properly load the game data from the text files
  *      - properly create the objects using the game data
- *      - handle invalid user input
+ *      - handle both valid and invalid user input appropriately
  *      - allow the user to win the game by meeting the win condition
  * 
  * 
  * Scenario 1: The program successfully loads the game data from the text files
+ * when the game is started
  * 
  * Input Data:
- *     - The text files containing the game data (Instructions.txt, Characters.txt, Items.txt, Locations.txt etc.)
+ *     - The text files containing the game data (Instructions.txt, Characters.txt, Items.txt, 
+ *       Locations.txt etc.)
  * EXPECTED:
  *      Welcome to Alice's Adventures in Wonderland! This is a roleplaying
  *      game based on the book by Lewis Carroll.  
@@ -440,13 +473,15 @@
  *      white rabbit with a pocket watch currying along the river bank. He quickly
  *      goes down a dark rabbit hole.
  *      
- *      NOTE: The expected output should be the data in Instructions.txt and the first location's description
+ *      NOTE: The expected output should be the data in Instructions.txt and the first location's
+ *      description
  * ACTUAL:
  *      Results displayed as expected (confirmed by running the program).
  * 
- * ---------------------------------------------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------------------------
  * 
- * NOTE: The rest of the scenarios are located in Test.txt as they are too long to fit in this document
+ * NOTE: The rest of the scenarios are located in Test.txt as they are too long to fit in this
+ * document
  * 
  */
 
