@@ -8,6 +8,11 @@
  */
 
 /**
+ * Certain code for the Game class is adapted from: https://github.com/CRMinges/adventure
+ * Accessed: Aug 30, 2022
+ */
+
+/**
  * DOCUMENTATION...
  */
 

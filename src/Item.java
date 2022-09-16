@@ -1,10 +1,15 @@
 /**
  * title: Item.java
  * description: Class that represents an item in the game
- * date: Sep 10, 2022
+ * date: Sep 16, 2022
  * @author Andrei Albu
  * @version 1.0
  * @copyright 2022 Andrei Albu
+ */
+
+/**
+ * Certain code for the Item class is adapted from: https://github.com/CRMinges/adventure
+ * Accessed: Aug 30, 2022
  */
 
 /** Primary (public) class Item */
