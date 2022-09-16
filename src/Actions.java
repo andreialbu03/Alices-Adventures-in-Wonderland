@@ -7,7 +7,7 @@
  * @copyright 2022 Andrei Albu
  */
 
-/** Primary (public) class Actions */
+/** The public class Actions */
 public class Actions {
 
     /** Instance variable to keep track of valid actions */

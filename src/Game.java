@@ -453,7 +453,7 @@
 // Import Java packages
 import java.util.*;
 
-/** Primary (public) class Game */
+/** Primary public class Game */
 public class Game {
 
     /** Private instance variables to store various attributes */

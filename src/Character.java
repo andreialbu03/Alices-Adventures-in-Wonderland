@@ -7,7 +7,7 @@
  * @copyright 2022 Andrei Albu
  */
 
-/** Primary (public) class Character */
+/** The public class Character */
 public class Character {
 
     /** Instance variables storing attributes of an NPC */

@@ -10,7 +10,7 @@
 // Import Java packages
 import java.util.*;
 
-/** Primary (public) class Inventory */
+/** The public class Inventory */
 public class Inventory {
 
     /** Instance variable to store the items in the inventory */

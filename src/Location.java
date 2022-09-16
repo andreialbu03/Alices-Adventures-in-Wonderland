@@ -15,7 +15,7 @@
 // Import Java packages
 import java.util.*;
 
-/** Primary (public) class Location */
+/** The public class Location */
 public class Location {
 
 	/** Instance variables storing a location's attributes */

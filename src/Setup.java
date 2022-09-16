@@ -16,7 +16,7 @@
 import java.util.*;
 import java.io.*;
 
-/** Primary (public) class Setup */
+/** The public class Setup */
 public class Setup {
 
     /** Public static method to create the game items */

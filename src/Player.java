@@ -15,7 +15,7 @@
 // Import Java packages
 import java.util.*;
 
-/** Primary (public) class Player */
+/** The public class Player */
 public class Player {
 
     /** Instance variables to store the player's attributes */

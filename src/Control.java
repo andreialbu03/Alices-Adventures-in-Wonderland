@@ -10,7 +10,7 @@
 // Import Java packages
 import java.util.*;
 
-/** Primary (public) class Control */
+/** The public class Control */
 public class Control {
 
     /** Public static method to check whether or not an action is valid */

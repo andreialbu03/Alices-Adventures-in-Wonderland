@@ -12,7 +12,7 @@
  * Accessed: Aug 30, 2022
  */
 
-/** Primary (public) class Item */
+/** The public class Item */
 public class Item {
 
     /** Instance variables to store the item's attributes */
