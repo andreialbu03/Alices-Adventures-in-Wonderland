@@ -29,7 +29,8 @@
  * with the characters and items in the game. The user can play the game by typing in commands and
  * the program will respond accordingly once the ENTER key is pressed.
  * 
- * Compiling and running instructions
+ * Compiling and running instructions:
+ * Change to the src directory containing the source code and type the following:
  * Compile: javac Game.java
  * Run    : java Game
  * 
