@@ -7,11 +7,6 @@
  * @copyright 2022 Andrei Albu
  */
 
-/**
- * Certain code for the Item class is adapted from: https://github.com/CRMinges/adventure
- * Accessed: Aug 30, 2022
- */
-
 /** The public class Item */
 public class Item {
 

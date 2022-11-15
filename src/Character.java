@@ -30,5 +30,4 @@ public class Character {
     public String getLocation() {
         return location;
     }
-
 }

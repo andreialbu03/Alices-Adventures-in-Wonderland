@@ -32,5 +32,4 @@ public class Control {
         // If the user input does not match a valid action, return null
         return null;
     }
-
 }

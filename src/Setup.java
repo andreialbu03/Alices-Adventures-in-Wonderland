@@ -7,11 +7,6 @@
  * @copyright 2022 Andrei Albu
  */
 
-/**
- * Certain code for the Setup class is adapted from: https://github.com/CRMinges/adventure
- * Accessed: Aug 29, 2022
- */
-
 // Import Java packages
 import java.util.*;
 import java.io.*;
